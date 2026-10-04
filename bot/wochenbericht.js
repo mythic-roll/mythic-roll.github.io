@@ -25,6 +25,13 @@ function lesen(code) {
   vm.runInNewContext(code, kontext, { timeout: 1000 });
   return kontext.window.MR || {};
 }
+function websiteAdresse() {
+  const repo = process.env.GITHUB_REPOSITORY || "";
+  const [besitzer, name] = repo.split("/");
+  if (!besitzer || !name) return "";
+  if (name.toLowerCase() === (besitzer + ".github.io").toLowerCase()) return "https://" + name.toLowerCase() + "/";
+  return "https://" + besitzer.toLowerCase() + ".github.io/" + name + "/";
+}
 
 async function main() {
   if (!WEBHOOK) {
@@ -48,6 +55,7 @@ async function main() {
 
   let spielLink = "https://www.roblox.com/games/" + (spiel.rootPlaceId || "");
   try { spielLink = (lesen(fs.readFileSync("daten/spiel.js", "utf8")).spiel.links.spiel) || spielLink; } catch (e) {}
+  const website = websiteAdresse();
 
   const zuletzt = spiel.updated ? new Date(spiel.updated).toLocaleString("de-DE", { timeZone: "Europe/Berlin", dateStyle: "long", timeStyle: "short" }) + " Uhr" : "unbekannt";
   const bewertung = (jetzt.daumenHoch + jetzt.daumenRunter) > 0 ? Math.round(jetzt.daumenHoch / (jetzt.daumenHoch + jetzt.daumenRunter) * 100) + " % positiv" : "noch keine Bewertungen";
@@ -70,7 +78,7 @@ async function main() {
         { name: "👍 Daumen hoch", value: "**" + zahl(jetzt.daumenHoch) + "**" + zuwachs(jetzt.daumenHoch, vorher && vorher.daumenHoch) + "\n" + bewertung, inline: true },
         { name: "🎲 Gerade im Spiel", value: zahl(spiel.playing) + " Spieler", inline: true },
         { name: "🛠️ Letztes Spiel-Update", value: zuletzt, inline: true },
-        { name: "\u200b", value: "[▶ Jetzt spielen](" + spielLink + ")", inline: false }
+        { name: "\u200b", value: "[▶ Jetzt spielen](" + spielLink + ")" + (website ? "   [🌐 Website](" + website + ")" : ""), inline: false }
       ],
       thumbnail: symbol ? { url: symbol } : undefined,
       footer: { text: "Sternwacht-Bot · jeden Sonntag" },

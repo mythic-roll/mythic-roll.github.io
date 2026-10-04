@@ -76,6 +76,7 @@ async function main() {
     if (v.behoben && v.behoben.length) felder.push({ name: "🐞 Behoben", value: liste(v.behoben) });
     const wege = [];
     if (links.spiel) wege.push("[▶ Jetzt spielen](" + links.spiel + ")");
+    if (website) wege.push("[🌐 Website](" + website + ")");
     if (website) wege.push("[📜 Alle Updates](" + website + "updates.html)");
     if (wege.length) felder.push({ name: "\u200b", value: wege.join("   ") });
 
