@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Die Welt – Mythische Rolle</title>
+<meta name="description" content="Die Welt von Mythische Rolle: Hub-Insel, die alten Lande, die Sternwacht, Biom-Inseln und der Weltraum.">
+<meta property="og:title" content="Die Welt von Mythische Rolle">
+<meta property="og:description" content="Hub-Insel, alte Lande, Sternwacht, Biom-Inseln und der Weltraum.">
+<meta name="theme-color" content="#141029">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.sprung { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.sprung a { text-decoration: none; font-weight: 600; padding: 6px 12px; border-radius: 999px; border: 1.5px solid var(--linie); }
+.sprung a:hover { border-color: var(--gold); }
+.region-kopf { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; align-items: center; margin-bottom: 30px; }
+@media (min-width: 900px) { .region-kopf { grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 40px; } }
+.region-kopf h2 { display: flex; align-items: center; gap: 12px; }
+.region-kopf p { color: var(--leise); font-size: 1.05rem; max-width: 56ch; }
+.ort h3 { margin-top: 12px; display: flex; gap: 8px; align-items: baseline; }
+.ort p { color: var(--leise); margin: 0; }
+.mini-auren { display: flex; flex-wrap: wrap; gap: 14px 20px; margin-top: 8px; }
+.mini-aura { display: inline-flex; align-items: center; gap: 10px; }
+.mini-aura i { width: 26px; height: 26px; border-radius: 50%; display: inline-block; background: radial-gradient(circle at 35% 30%, #fff 0 6%, var(--k1) 30%, var(--k2) 75%); box-shadow: 0 0 12px color-mix(in srgb, var(--k1) 55%, transparent); }
+.mini-aura span { font-weight: 600; }
+.mini-aura small { color: var(--leise); }
+</style>
+</head>
+<body>
+<div id="kopf"></div>
+<main class="breite">
+  <section class="kopfbereich">
+    <h1>Die Welt</h1>
+    <p>Vom Roll-Altar im Hub bis hinauf in den Weltraum: Mythische Rolle ist eine Welt zum Entdecken, mit Orten, Bewohnern und Geheimnissen.</p>
+    <nav class="sprung" id="sprung" aria-label="Regionen"></nav>
+  </section>
+  <div id="regionen"></div>
+</main>
+<div id="fuss"></div>
+
+<script src="daten/spiel.js"></script>
+<script src="daten/welt.js"></script>
+<script src="daten/auren.js"></script>
+<script src="seite.js"></script>
+<script>
+(function () {
+  var MR = window.MR;
+  var sprung = document.getElementById("sprung");
+  var box = document.getElementById("regionen");
+  MR.welt.forEach(function (r) {
+    var a = MR.el("a", null, r.symbol + " " + r.name);
+    a.href = "#" + r.id;
+    sprung.appendChild(a);
+
+    var s = MR.el("section", "abschnitt");
+    s.id = r.id;
+    var kopf = MR.el("div", "region-kopf");
+    var t = MR.el("div");
+    var h = MR.el("h2");
+    h.appendChild(MR.el("span", null, r.symbol));
+    h.appendChild(MR.el("span", null, r.name));
+    t.appendChild(h);
+    t.appendChild(MR.el("p", null, r.text));
+    if (r.id === "weltraum") {
+      var mini = MR.el("div", "mini-auren");
+      MR.auren.liste.filter(function (x) { return x.nurBiom && x.biom === "Weltraum"; }).forEach(function (x) {
+        var m = MR.el("span", "mini-aura");
+        var i = MR.el("i");
+        i.style.setProperty("--k1", MR.rgb(x.farbe));
+        i.style.setProperty("--k2", MR.rgb(x.farbe2));
+        m.appendChild(i);
+        m.appendChild(MR.el("span", null, x.name));
+        m.appendChild(MR.el("small", null, "1 zu " + MR.zahl(x.chance)));
+        mini.appendChild(m);
+      });
+      t.appendChild(mini);
+    }
+    kopf.appendChild(t);
+    kopf.appendChild(MR.bildplatz(r.id, r.symbol, MR.rgb(r.farbe), r.name));
+    s.appendChild(kopf);
+
+    if (r.orte && r.orte.length) {
+      var g = MR.el("div", "raster-3");
+      r.orte.forEach(function (o) {
+        var d = MR.el("article", "ort");
+        d.appendChild(MR.bildplatz(o.id, o.symbol, MR.rgb(r.farbe), o.name));
+        d.appendChild(MR.el("h3", null, o.name));
+        d.appendChild(MR.el("p", null, o.text));
+        g.appendChild(d);
+      });
+      s.appendChild(g);
+    }
+    box.appendChild(s);
+  });
+})();
+</script>
+</body>
+</html>

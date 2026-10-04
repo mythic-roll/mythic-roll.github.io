@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mythische Rolle – Würfle dein Schicksal</title>
+<meta name="description" content="Mythische Rolle ist ein Auren-Würfelspiel auf Roblox: 29 Auren, eine riesige Welt, Flügel, Klassen und Bosse.">
+<meta property="og:title" content="Mythische Rolle – Würfle dein Schicksal">
+<meta property="og:description" content="Ein Auren-Würfelspiel auf Roblox: 29 Auren, eine riesige Welt, Flügel, Klassen und Bosse.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#141029">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.held { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; align-items: center; padding: 56px 0 40px; }
+@media (min-width: 900px) { .held { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 56px; padding: 72px 0 56px; } }
+.held .motto { font-family: "Cinzel", Georgia, serif; color: var(--gold); font-size: clamp(1.1rem, 2.4vw, 1.45rem); margin: 10px 0 18px; }
+.held .einleitung { font-size: 1.1rem; max-width: 56ch; }
+.orakel { display: grid; justify-items: center; gap: 14px; text-align: center; }
+.kugel { width: min(300px, 70vw); aspect-ratio: 1; border-radius: 50%; position: relative;
+  background: radial-gradient(circle at 35% 30%, #fff 0 4%, var(--k1) 22%, var(--k2) 62%, color-mix(in srgb, var(--k2) 40%, #000) 100%);
+  box-shadow: 0 0 60px color-mix(in srgb, var(--k1) 55%, transparent), 0 0 140px color-mix(in srgb, var(--k2) 35%, transparent);
+  transition: background .9s ease, box-shadow .9s ease; --k1: #e8c46a; --k2: #7e5bd6; }
+.kugel::after { content: ""; position: absolute; inset: -14px; border-radius: 50%; border: 1px dashed color-mix(in srgb, var(--k1) 60%, transparent); animation: kreisen 30s linear infinite; }
+@keyframes kreisen { to { transform: rotate(360deg); } }
+.orakel .auraname { font-family: "Cinzel", Georgia, serif; font-size: 1.7rem; font-weight: 700; min-height: 1.3em; }
+.orakel .auraname.neu { animation: enthuellen .7s ease; }
+@keyframes enthuellen { from { opacity: 0; transform: translateY(8px); letter-spacing: .3em; } to { opacity: 1; transform: none; } }
+.orakel .wert { color: var(--leise); }
+.features { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px 40px; }
+@media (min-width: 720px) { .features { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .features { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.feature { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr); gap: 4px 12px; }
+.feature .sym { font-size: 1.6rem; line-height: 1.2; }
+.feature h3 { margin: 2px 0 4px; }
+.feature p { color: var(--leise); margin: 0; }
+.leiter { display: flex; flex-wrap: wrap; gap: 10px; margin: 8px 0 18px; }
+.sprosse { display: grid; gap: 2px; padding: 10px 14px; border-radius: 12px; border: 1.5px solid color-mix(in srgb, var(--farbe) 55%, transparent); background: color-mix(in srgb, var(--farbe) 10%, transparent); min-width: 120px; }
+.sprosse b { color: var(--farbe); font-size: 1rem; }
+.sprosse span { color: var(--leise); font-size: .88rem; }
+.weiter { font-weight: 700; color: var(--gold); text-decoration: none; }
+.weiter:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div id="kopf"></div>
+<main class="breite">
+  <section class="held">
+    <div>
+      <h1>Mythische Rolle</h1>
+      <p class="motto" id="motto"></p>
+      <p class="einleitung" id="einleitung"></p>
+    </div>
+    <div class="orakel" aria-live="polite">
+      <div class="kugel" id="kugel" role="img" aria-label="Aura-Kugel"></div>
+      <div class="auraname" id="auraname"></div>
+      <div class="wert"><span class="chip" id="aurastufe"></span> <span id="auraquote"></span></div>
+    </div>
+  </section>
+
+  <section class="abschnitt" aria-labelledby="f-titel">
+    <h2 id="f-titel">Was dich erwartet</h2>
+    <div class="features" id="features"></div>
+  </section>
+
+  <section class="abschnitt" aria-labelledby="s-titel">
+    <h2 id="s-titel">Acht Stufen der Seltenheit</h2>
+    <p class="leise text">Jede Aura gehört zu einer Seltenheitsstufe. Je seltener sie ist, desto prächtiger erscheint sie, und Legendär und Mythisch kündigen sich mit Lichtsäule und Chor an.</p>
+    <div class="leiter" id="leiter"></div>
+    <a class="weiter" href="auren.html">Alle 29 Auren ansehen</a>
+  </section>
+</main>
+<div id="fuss"></div>
+
+<script src="daten/spiel.js"></script>
+<script src="daten/auren.js"></script>
+<script src="seite.js"></script>
+<script>
+(function () {
+  var MR = window.MR;
+  document.getElementById("motto").textContent = MR.spiel.motto;
+  document.getElementById("einleitung").textContent = MR.spiel.einleitung;
+
+  var fbox = document.getElementById("features");
+  MR.spiel.features.forEach(function (f) {
+    var d = MR.el("div", "feature");
+    d.appendChild(MR.el("span", "sym", f.symbol));
+    var t = MR.el("div");
+    t.appendChild(MR.el("h3", null, f.titel));
+    t.appendChild(MR.el("p", null, f.text));
+    d.appendChild(t);
+    fbox.appendChild(d);
+  });
+
+  var leiter = document.getElementById("leiter");
+  MR.auren.stufen.forEach(function (s) {
+    var d = MR.el("div", "sprosse");
+    d.style.setProperty("--farbe", MR.rgb(s.farbe));
+    d.appendChild(MR.el("b", null, s.name));
+    d.appendChild(MR.el("span", null, s.min === 1 ? "ab 1 zu 1" : "ab 1 zu " + MR.zahl(s.min)));
+    leiter.appendChild(d);
+  });
+
+  // Aura-Orakel: enthüllt nacheinander echte Auren in ihren Spielfarben
+  var auswahl = ["Aurora", "Drachenatem", "Sternenherz", "Kosmos", "Mythische Rolle", "Glimmen", "Mondlicht", "Sturmläufer"];
+  var liste = auswahl.map(function (n) { return MR.auren.liste.filter(function (a) { return a.name === n; })[0]; }).filter(Boolean);
+  var stufen = {};
+  MR.auren.stufen.forEach(function (s) { stufen[s.name] = s; });
+  var kugel = document.getElementById("kugel"), name = document.getElementById("auraname");
+  var chip = document.getElementById("aurastufe"), quote = document.getElementById("auraquote");
+  var i = 0;
+  function zeigen() {
+    var a = liste[i % liste.length];
+    kugel.style.setProperty("--k1", MR.rgb(a.farbe));
+    kugel.style.setProperty("--k2", MR.rgb(a.farbe2));
+    kugel.setAttribute("aria-label", "Aura " + a.name);
+    name.textContent = a.name;
+    name.classList.remove("neu"); void name.offsetWidth; name.classList.add("neu");
+    chip.textContent = a.stufe;
+    chip.style.setProperty("--farbe", MR.rgb(stufen[a.stufe].farbe));
+    quote.textContent = "1 zu " + MR.zahl(a.chance);
+    i += 1;
+  }
+  zeigen();
+  setInterval(zeigen, 3200);
+})();
+</script>
+</body>
+</html>

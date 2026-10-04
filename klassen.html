@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Klassen und Skills – Mythische Rolle</title>
+<meta name="description" content="Die vier Klassen von Mythische Rolle, ihre Lehrer, der Skillbaum und die Ränge.">
+<meta property="og:title" content="Klassen und Skills – Mythische Rolle">
+<meta property="og:description" content="Magier, Hüter, Glückswirker und Himmelsläufer, der Skillbaum mit 35 Sternen und alle Ränge.">
+<meta name="theme-color" content="#141029">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.klasse h3 { color: var(--farbe); font-size: 1.4rem; margin: 14px 0 2px; display: flex; gap: 10px; align-items: center; }
+.klasse .lehrer { color: var(--leise); margin-bottom: 8px; }
+.klasse .kurz { font-weight: 700; }
+.klasse p { margin: 0 0 6px; }
+.aeste { display: grid; grid-template-columns: minmax(0, 1fr); gap: 26px 40px; margin-top: 18px; }
+@media (min-width: 720px) { .aeste { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.ast h3 { display: flex; gap: 10px; align-items: center; }
+.ast p { color: var(--leise); }
+.ast ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 4px; }
+.ast li::marker { color: var(--gold); }
+.raenge { list-style: none; margin: 18px 0 0; padding: 0; display: grid; gap: 0; max-width: 640px; }
+.raenge li { display: grid; grid-template-columns: 2.4rem minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px dashed var(--linie); }
+.raenge .stufe { font-family: "Cinzel", Georgia, serif; font-weight: 700; color: var(--gold); text-align: center; font-size: 1.15rem; }
+.raenge .rname { font-weight: 700; font-size: 1.05rem; }
+.raenge .ab { color: var(--leise); font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<div id="kopf"></div>
+<main class="breite">
+  <section class="kopfbereich">
+    <h1>Klassen und Skills</h1>
+    <p id="einleitung"></p>
+  </section>
+
+  <section class="abschnitt" aria-labelledby="k-titel">
+    <h2 id="k-titel">Die vier Klassen</h2>
+    <div class="raster-2" id="klassen"></div>
+  </section>
+
+  <section class="abschnitt" aria-labelledby="s-titel">
+    <h2 id="s-titel">Der Skillbaum</h2>
+    <p class="leise text" id="skilltext"></p>
+    <div class="aeste" id="aeste"></div>
+  </section>
+
+  <section class="abschnitt" aria-labelledby="r-titel">
+    <h2 id="r-titel">Ränge</h2>
+    <p class="leise text" id="rangtext"></p>
+    <ol class="raenge" id="raenge"></ol>
+  </section>
+</main>
+<div id="fuss"></div>
+
+<script src="daten/spiel.js"></script>
+<script src="daten/klassen.js"></script>
+<script src="seite.js"></script>
+<script>
+(function () {
+  var MR = window.MR, K = MR.klassen;
+  document.getElementById("einleitung").textContent = K.einleitung;
+  var kbox = document.getElementById("klassen");
+  K.liste.forEach(function (k) {
+    var d = MR.el("article", "klasse");
+    d.style.setProperty("--farbe", MR.rgb(k.farbe));
+    d.appendChild(MR.bildplatz(k.id, k.symbol, MR.rgb(k.farbe), k.name));
+    var h = MR.el("h3");
+    h.appendChild(MR.el("span", null, k.symbol));
+    h.appendChild(MR.el("span", null, k.name));
+    d.appendChild(h);
+    d.appendChild(MR.el("div", "lehrer", "Lehrer: " + k.lehrer));
+    d.appendChild(MR.el("p", "kurz", k.kurz));
+    d.appendChild(MR.el("p", "leise", k.text));
+    kbox.appendChild(d);
+  });
+  document.getElementById("skilltext").textContent = K.skillbaum.text;
+  var abox = document.getElementById("aeste");
+  K.skillbaum.aeste.forEach(function (a) {
+    var d = MR.el("article", "ast");
+    var h = MR.el("h3");
+    h.appendChild(MR.el("span", null, a.symbol));
+    h.appendChild(MR.el("span", null, a.name));
+    d.appendChild(h);
+    d.appendChild(MR.el("p", null, a.text));
+    var ul = MR.el("ul");
+    (a.beispiele || []).forEach(function (b) { ul.appendChild(MR.el("li", null, b)); });
+    d.appendChild(ul);
+    abox.appendChild(d);
+  });
+  document.getElementById("rangtext").textContent = K.raenge.text;
+  var rbox = document.getElementById("raenge");
+  K.raenge.liste.forEach(function (r, i) {
+    var li = MR.el("li");
+    li.appendChild(MR.el("span", "stufe", i + 1));
+    li.appendChild(MR.el("span", "rname", r.name));
+    li.appendChild(MR.el("span", "ab", r.wuerfe === 0 ? "zum Start" : "ab " + MR.zahl(r.wuerfe) + " Würfen"));
+    rbox.appendChild(li);
+  });
+})();
+</script>
+</body>
+</html>

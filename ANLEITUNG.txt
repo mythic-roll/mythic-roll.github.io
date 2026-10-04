@@ -1,0 +1,88 @@
+MYTHISCHE ROLLE – WEBSITE
+=========================
+
+Die Seiten
+----------
+index.html      Das Spiel: Einleitung, Aura-Orakel, Features, Seltenheitsstufen
+auren.html      Alle 29 Auren mit Filter nach Stufe und Heimat
+welt.html       Die Welt: Hub, alte Lande, Sternwacht, Biom-Inseln, Weltraum, Nacht
+klassen.html    Die vier Klassen, Skillbaum und Ränge
+updates.html    Changelog aller Versionen
+roadmap.html    Die Roadmap im Sternbild-Design
+Unten auf jeder Seite steht der Community-Bereich.
+
+bot/            Sternwacht-Bot für Discord (siehe BOT-ANLEITUNG.txt)
+.github/        Zeitpläne des Bots für GitHub
+
+Die Inhalte stehen im Ordner „daten“ – eine Datei pro Thema:
+spiel.js, auren.js, welt.js, klassen.js, updates.js, roadmap.js
+Design und Technik (style.css, seite.js, die .html-Dateien) bleiben gleich.
+
+
+1. Website online stellen (kostenlos, mit Netlify)
+-------------------------------------------------
+1. Die ZIP-Datei entpacken.
+2. Im Browser https://app.netlify.com/drop öffnen.
+3. Den ganzen Ordner „mythische-rolle-website“ auf die Fläche ziehen.
+4. Ein kostenloses Netlify-Konto anlegen, damit die Seite dauerhaft bleibt.
+5. In den Einstellungen der Seite den Namen ändern, z. B. „mythische-rolle“.
+   Die Adresse lautet dann https://mythische-rolle.netlify.app
+
+
+1b. Alternativ: Website mit GitHub Pages online stellen (kostenlos)
+-------------------------------------------------------------------
+1. Auf https://github.com ein kostenloses Konto anlegen. Der Benutzername
+   wird Teil der Adresse, z. B. „razerfazer22“.
+2. Oben rechts auf „+“ und „New repository“ klicken.
+   Name: mythische-rolle   ·   Sichtbarkeit: Public   ·   „Create repository“.
+3. Auf der neuen, leeren Seite auf „uploading an existing file“ klicken.
+4. Die ZIP-Datei entpacken, den Ordner „mythische-rolle-website“ öffnen und
+   seinen INHALT (index.html, style.css, seite.js, die Ordner „daten“ und
+   „bilder“ usw.) auf die Upload-Fläche ziehen – nicht den Ordner selbst,
+   damit index.html ganz oben liegt. Dann „Commit changes“ klicken.
+5. Im Repository auf „Settings“ → links „Pages“ gehen.
+   Unter „Build and deployment“: Source „Deploy from a branch“,
+   Branch „main“, Ordner „/ (root)“ → „Save“.
+6. Nach ein bis zwei Minuten ist die Website online unter
+   https://DEIN-BENUTZERNAME.github.io/mythische-rolle/
+
+Tipp für eine kürzere Adresse: Nennst du das Repository genau
+„DEIN-BENUTZERNAME.github.io“, ist die Website direkt unter
+https://DEIN-BENUTZERNAME.github.io erreichbar.
+
+Aktualisieren mit GitHub:
+- Kleine Änderung: Datei auf github.com öffnen (z. B. daten/spiel.js),
+  auf den Stift klicken, ändern, „Commit changes“ – nach etwa einer Minute online.
+- Neue Dateien von Claude: „Add file“ → „Upload files“, die Dateien
+  hineinziehen (gleiche Namen werden ersetzt) und „Commit changes“.
+  In Unterordner (z. B. daten) erst hineinklicken, dann hochladen.
+
+
+2. Website aktualisieren
+------------------------
+1. Von Claude die neuen Dateien holen (meist nur einzelne Dateien aus „daten“).
+2. Im Ordner die alten Dateien ersetzen.
+3. Bei Netlify die Seite öffnen, zum Bereich „Deploys“ gehen und den ganzen
+   Ordner erneut auf die Upload-Fläche ziehen.
+
+
+3. Discord und Roblox-Gruppe verlinken
+--------------------------------------
+„daten/spiel.js“ mit einem Texteditor öffnen und die leeren Links füllen:
+
+    "discord": "https://discord.gg/DEIN-EINLADUNGSLINK",
+    "gruppe": "https://www.roblox.com/communities/…",
+
+Speichern und wie unter 2. hochladen. Die Knöpfe erscheinen erst, wenn ein
+Link eingetragen ist. Claude kann die Links auch für dich eintragen.
+
+
+4. Screenshots einbauen
+-----------------------
+Im Ordner „bilder“ steht in LIESMICH.txt, wie jedes Bild heißen muss,
+z. B. „hafen.jpg“ für den Hafen. Bild hineinlegen, hochladen – fertig.
+Fehlt ein Bild, zeigt die Seite an dieser Stelle die Illustration.
+
+
+Tipp: Ein Doppelklick auf index.html öffnet die Website auch ohne
+Internet-Adresse im Browser, so siehst du Änderungen vor dem Hochladen.

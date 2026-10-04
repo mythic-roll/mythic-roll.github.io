@@ -1,0 +1,31 @@
+# Sternwacht-Bot: schickt jeden Sonntag einen Wochenbericht mit den Zahlen des Spiels nach Discord.
+name: "Discord: Wochenbericht"
+
+on:
+  schedule:
+    - cron: "0 16 * * 0"   # sonntags 18 Uhr (Sommerzeit) bzw. 17 Uhr (Winterzeit)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bericht:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Wochenbericht senden
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          UNIVERSE_ID: "10768606540"
+        run: node bot/wochenbericht.js
+      - name: Zahlen für nächste Woche merken
+        run: |
+          git config user.name "Sternwacht-Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bot/statistik.json
+          git diff --cached --quiet || git commit -m "Wochenbericht: Zahlen gespeichert"
+          git push

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Updates – Mythische Rolle</title>
+<meta name="description" content="Alle Updates von Mythische Rolle: was neu ist, was besser wurde und was behoben ist.">
+<meta property="og:title" content="Updates – Mythische Rolle">
+<meta property="og:description" content="Der Changelog aller Versionen von Mythische Rolle.">
+<meta name="theme-color" content="#141029">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.zeitleiste { position: relative; margin: 16px 0 40px; max-width: 820px; }
+.zeitleiste::before { content: ""; position: absolute; left: 14px; top: 8px; bottom: 8px; width: 2px; background: linear-gradient(var(--gold), var(--linie)); }
+.version { position: relative; padding-left: 48px; margin-bottom: 18px; }
+.version::before { content: ""; position: absolute; left: 7px; top: 14px; width: 16px; height: 16px; border-radius: 50%; background: var(--himmel); border: 3px solid var(--gold); }
+.version:first-child::before { background: var(--gold); box-shadow: 0 0 0 6px var(--gold-glanz); }
+.version summary { list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 8px 0; }
+.version summary::-webkit-details-marker { display: none; }
+.version .nr { font-family: "Cinzel", Georgia, serif; font-weight: 700; color: var(--gold); font-size: 1.35rem; }
+.version .titel { font-weight: 700; font-size: 1.15rem; }
+.version .datum { color: var(--leise); font-size: .92rem; }
+.gruppe { margin: 6px 0 14px; }
+.gruppe h3 { font-family: "Nunito Sans", system-ui, sans-serif; font-size: .95rem; font-weight: 700; color: var(--farbe); margin-bottom: 6px; letter-spacing: 0; }
+.gruppe ul { margin: 0; padding-left: 1.1rem; display: grid; gap: 5px; }
+.gruppe li::marker { color: var(--farbe); }
+</style>
+</head>
+<body>
+<div id="kopf"></div>
+<main class="breite">
+  <section class="kopfbereich">
+    <h1>Updates</h1>
+    <p>Alles, was sich seit dem Start getan hat, die neueste Version zuerst.</p>
+  </section>
+  <section class="zeitleiste" id="zeitleiste" aria-label="Versionen"></section>
+</main>
+<div id="fuss"></div>
+
+<script src="daten/spiel.js"></script>
+<script src="daten/updates.js"></script>
+<script src="seite.js"></script>
+<script>
+(function () {
+  var MR = window.MR;
+  var box = document.getElementById("zeitleiste");
+  var GRUPPEN = [
+    { feld: "neu", name: "Neu", farbe: "var(--nordlicht)" },
+    { feld: "verbessert", name: "Verbessert", farbe: "var(--gold)" },
+    { feld: "behoben", name: "Behoben", farbe: "var(--leise)" }
+  ];
+  MR.updates.forEach(function (v, i) {
+    var d = MR.el("details", "version");
+    if (i === 0) d.open = true;
+    var s = MR.el("summary");
+    s.appendChild(MR.el("span", "nr", "Version " + v.version));
+    s.appendChild(MR.el("span", "titel", v.titel));
+    s.appendChild(MR.el("span", "datum", v.datum));
+    d.appendChild(s);
+    GRUPPEN.forEach(function (g) {
+      var punkte = v[g.feld] || [];
+      if (!punkte.length) return;
+      var gr = MR.el("div", "gruppe");
+      gr.style.setProperty("--farbe", g.farbe);
+      gr.appendChild(MR.el("h3", null, g.name));
+      var ul = MR.el("ul");
+      punkte.forEach(function (p) { ul.appendChild(MR.el("li", null, p)); });
+      gr.appendChild(ul);
+      d.appendChild(gr);
+    });
+    box.appendChild(d);
+  });
+})();
+</script>
+</body>
+</html>

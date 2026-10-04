@@ -1,0 +1,44 @@
+BILDER FÜR DIE WEBSITE
+======================
+
+Lege hier Screenshots aus dem Spiel ab. Jedes Bild ersetzt automatisch die
+Illustration an seiner Stelle. Erlaubt sind .jpg, .png und .webp.
+Am besten im Querformat 16:9, zum Beispiel 1600 × 900 Pixel.
+
+icon.png            Dein Spielsymbol, quadratisch (erscheint oben links)
+
+hub.jpg             Die Hub-Insel (Region)
+rollaltar.jpg       Roll-Altar
+gildenhalle.jpg     Gildenhalle
+schmiede.jpg        Schmiede
+basar.jpg           Basar
+archiv.jpg          Archiv der Auren
+portale.jpg         Die drei Portale
+
+altelande.jpg       Die alten Lande (Region)
+hafen.jpg           Hafen in der Strandbucht
+muehlenhof.jpg      Mühlenhof
+ruinen.jpg          Vier alte Ruinen
+fluesse.jpg         Flüsse und Wasserfälle
+sumpf.jpg           Der Sumpf
+waelder.jpg         Die Wälder
+
+sternwacht.jpg      Die Sternwacht (Region)
+sternenstieg.jpg    Sternenstieg und Sternenbrücke
+vorhof.jpg          Der Vorhof
+turm.jpg            Der Turm
+
+inseln.jpg          Die Biom-Inseln (Region)
+eis.jpg             Eis & Kristall
+vulkan.jpg          Vulkan
+wolkentempel.jpg    Wolkentempel
+nebelwald.jpg       Nebelwald
+
+weltraum.jpg        Der Weltraum (Region)
+
+nacht.jpg           Wenn es Nacht wird (Region)
+
+magier.jpg          Klasse Magier, z. B. der Lehrer im Vorhof
+hueter.jpg          Klasse Hüter, z. B. der Lehrer im Vorhof
+glueckswirker.jpg   Klasse Glückswirker, z. B. der Lehrer im Vorhof
+himmelslaeufer.jpg  Klasse Himmelsläufer, z. B. der Lehrer im Vorhof

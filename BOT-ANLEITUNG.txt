@@ -1,0 +1,63 @@
+STERNWACHT-BOT – DISCORD-ANKÜNDIGUNGEN UND WOCHENBERICHT
+========================================================
+
+Was der Bot macht
+-----------------
+• Update-Ankündigung: Sobald du eine neue Datei „daten/updates.js“ mit einer
+  neuen Version hochlädst, postet er eine Nachricht in deinen Discord-Kanal.
+• Wochenbericht: Jeden Sonntag um 18 Uhr (im Winter 17 Uhr) schickt er die
+  Zahlen deines Spiels: Besuche, Favoriten, Daumen hoch – mit Zuwachs der Woche.
+Der Bot läuft kostenlos auf GitHub („GitHub Actions“). Dein Rechner muss
+dafür nicht an sein.
+
+
+Einmalig einrichten (ca. 10 Minuten)
+-----------------------------------
+1. Website hochladen
+   Den INHALT des Ordners „mythische-rolle-website“ in dein GitHub-Repository
+   hochladen (siehe ANLEITUNG.txt, Teil 1b). Wichtig: Die Ordner „.github“
+   und „bot“ müssen mit hoch.
+   Mac: Der Ordner „.github“ ist im Finder versteckt. Mit Cmd + Shift + .
+   (Punkt) blendest du ihn ein.
+
+2. Discord-Webhook anlegen
+   In Discord: Servereinstellungen → Integrationen → Webhooks →
+   „Neuer Webhook“. Namen „Sternwacht-Bot“ geben, den Kanal wählen
+   (z. B. #ankündigungen) und auf „Webhook-URL kopieren“ klicken.
+   Diese Adresse ist geheim – nirgends öffentlich posten.
+
+3. Webhook als Geheimnis in GitHub speichern
+   Im Repository: Settings → Secrets and variables → Actions →
+   „New repository secret“.
+   Name:   DISCORD_WEBHOOK
+   Secret: die kopierte Webhook-Adresse
+   → „Add secret“.
+
+4. Testen
+   Im Repository oben auf „Actions“ klicken.
+   • Links „Discord: Wochenbericht“ wählen → „Run workflow“ → „Run workflow“.
+   • Links „Discord: Update-Ankündigung“ wählen → „Run workflow“ (Häkchen
+     „Neueste Version trotzdem ankündigen“ lassen) → „Run workflow“.
+   Nach etwa einer halben Minute stehen beide Nachrichten in deinem Kanal.
+
+
+Optional: eine Rolle anpingen
+-----------------------------
+Soll bei neuen Updates z. B. die Rolle @Updates benachrichtigt werden:
+1. In Discord unter Einstellungen → Erweitert den Entwicklermodus einschalten.
+2. Servereinstellungen → Rollen → Rechtsklick auf die Rolle → „Rollen-ID kopieren“.
+3. In GitHub: Settings → Secrets and variables → Actions → Reiter „Variables“
+   → „New repository variable“. Name: DISCORD_ROLLE, Wert: die Rollen-ID.
+
+
+Gut zu wissen
+-------------
+• Beim allerersten Hochladen der Website kündigt der Bot nichts an – erst
+  Versionen, die danach neu dazukommen.
+• Schlägt ein Lauf fehl, schickt GitHub dir eine E-Mail. Den Grund siehst du
+  unter „Actions“ beim rot markierten Lauf.
+• Der Bot merkt sich die Zahlen der Vorwoche in „bot/statistik.json“ und
+  speichert sie dort jeden Sonntag selbst.
+• Pausiert GitHub den Sonntagsplan einmal (z. B. nach langer Ruhe im
+  Repository), unter „Actions“ → „Discord: Wochenbericht“ auf
+  „Enable workflow“ klicken.

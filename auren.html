@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Auren – Mythische Rolle</title>
+<meta name="description" content="Alle 29 Auren aus Mythische Rolle mit Seltenheit, Wahrscheinlichkeit und Heimat.">
+<meta property="og:title" content="Alle Auren – Mythische Rolle">
+<meta property="og:description" content="29 Auren in acht Seltenheitsstufen, von 1 zu 2 bis 1 zu 1.000.000.">
+<meta name="theme-color" content="#141029">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.filter { display: grid; gap: 12px; margin: 8px 0 28px; }
+.filterreihe { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.filterreihe .bez { color: var(--leise); font-size: .92rem; margin-right: 4px; min-width: 4.5rem; }
+.filterknopf { font: inherit; font-weight: 600; font-size: .92rem; padding: 6px 12px; border-radius: 999px; border: 1.5px solid var(--linie); background: transparent; color: var(--text); cursor: pointer; }
+.filterknopf[aria-pressed="true"] { border-color: var(--farbe, var(--gold)); color: var(--farbe, var(--gold)); background: color-mix(in srgb, var(--farbe, var(--gold)) 12%, transparent); }
+.galerie { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 30px 22px; }
+.aura { display: grid; justify-items: center; text-align: center; gap: 6px; }
+.aura .kugel { width: 108px; aspect-ratio: 1; border-radius: 50%; margin-bottom: 8px;
+  background: radial-gradient(circle at 35% 30%, #fff 0 5%, var(--k1) 24%, var(--k2) 64%, color-mix(in srgb, var(--k2) 40%, #000) 100%);
+  box-shadow: 0 0 calc(var(--glanz) * 1px) color-mix(in srgb, var(--k1) 60%, transparent); }
+.aura h3 { margin: 0; font-size: 1.05rem; }
+.aura .quote { font-variant-numeric: tabular-nums; font-weight: 700; }
+.aura .info { color: var(--leise); font-size: .88rem; line-height: 1.45; }
+.anzahl { color: var(--leise); margin-bottom: 16px; }
+.leer { color: var(--leise); padding: 24px 0; }
+</style>
+</head>
+<body>
+<div id="kopf"></div>
+<main class="breite">
+  <section class="kopfbereich">
+    <h1>Auren</h1>
+    <p>29 Auren in acht Seltenheitsstufen, von 1 zu 2 bis 1 zu 1.000.000. Manche sind auf bestimmten Inseln zu Hause, sechs gibt es nur im Weltraum.</p>
+  </section>
+  <section aria-label="Filter" class="filter">
+    <div class="filterreihe" id="stufenfilter"><span class="bez">Stufe</span></div>
+    <div class="filterreihe" id="heimatfilter"><span class="bez">Heimat</span></div>
+  </section>
+  <p class="anzahl" id="anzahl" aria-live="polite"></p>
+  <section class="galerie" id="galerie" aria-label="Auren"></section>
+</main>
+<div id="fuss"></div>
+
+<script src="daten/spiel.js"></script>
+<script src="daten/auren.js"></script>
+<script src="seite.js"></script>
+<script>
+(function () {
+  var MR = window.MR;
+  var stufen = {};
+  MR.auren.stufen.forEach(function (s) { stufen[s.name] = s; });
+  var wahlStufe = "Alle", wahlHeimat = "Alle";
+
+  function knopf(text, farbe, aktiv, beiKlick) {
+    var b = MR.el("button", "filterknopf", text);
+    b.type = "button";
+    if (farbe) b.style.setProperty("--farbe", farbe);
+    b.setAttribute("aria-pressed", aktiv ? "true" : "false");
+    b.addEventListener("click", beiKlick);
+    return b;
+  }
+  function filterBauen() {
+    var sf = document.getElementById("stufenfilter");
+    var hf = document.getElementById("heimatfilter");
+    while (sf.children.length > 1) sf.removeChild(sf.lastChild);
+    while (hf.children.length > 1) hf.removeChild(hf.lastChild);
+    ["Alle"].concat(MR.auren.stufen.map(function (s) { return s.name; })).forEach(function (n) {
+      sf.appendChild(knopf(n, n === "Alle" ? null : MR.rgb(stufen[n].farbe), wahlStufe === n, function () { wahlStufe = n; filterBauen(); zeigen(); }));
+    });
+    var heimaten = ["Alle"];
+    MR.auren.liste.forEach(function (a) { if (heimaten.indexOf(a.biom) === -1) heimaten.push(a.biom); });
+    heimaten.forEach(function (h) {
+      hf.appendChild(knopf(h === "überall" ? "Überall" : h, null, wahlHeimat === h, function () { wahlHeimat = h; filterBauen(); zeigen(); }));
+    });
+  }
+  function zeigen() {
+    var g = document.getElementById("galerie");
+    while (g.firstChild) g.removeChild(g.firstChild);
+    var liste = MR.auren.liste.slice().sort(function (a, b) { return a.chance - b.chance; }).filter(function (a) {
+      return (wahlStufe === "Alle" || a.stufe === wahlStufe) && (wahlHeimat === "Alle" || a.biom === wahlHeimat);
+    });
+    document.getElementById("anzahl").textContent = liste.length === 1 ? "1 Aura" : liste.length + " Auren";
+    if (!liste.length) { g.appendChild(MR.el("p", "leer", "Keine Aura passt zu diesem Filter. Wähle eine andere Stufe oder Heimat.")); return; }
+    liste.forEach(function (a) {
+      var d = MR.el("article", "aura");
+      var k = MR.el("div", "kugel");
+      k.style.setProperty("--k1", MR.rgb(a.farbe));
+      k.style.setProperty("--k2", MR.rgb(a.farbe2));
+      k.style.setProperty("--glanz", String(Math.min(70, 14 + Math.log10(a.chance) * 9)));
+      k.setAttribute("aria-hidden", "true");
+      d.appendChild(k);
+      d.appendChild(MR.el("h3", null, a.name));
+      var c = MR.el("span", "chip", a.stufe);
+      c.style.setProperty("--farbe", MR.rgb(stufen[a.stufe].farbe));
+      d.appendChild(c);
+      d.appendChild(MR.el("div", "quote", "1 zu " + MR.zahl(a.chance)));
+      var heimat = a.nurBiom ? "nur im " + a.biom : (a.biom === "überall" ? "überall zu finden" : "Heimat: " + a.biom);
+      d.appendChild(MR.el("div", "info", heimat));
+      d.appendChild(MR.el("div", "info", "Effekt: " + a.effekt));
+      g.appendChild(d);
+    });
+  }
+  filterBauen();
+  zeigen();
+})();
+</script>
+</body>
+</html>

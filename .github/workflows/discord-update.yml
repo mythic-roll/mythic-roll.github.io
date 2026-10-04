@@ -1,0 +1,34 @@
+# Sternwacht-Bot: kündigt neue Versionen in Discord an, sobald daten/updates.js hochgeladen wird.
+name: "Discord: Update-Ankündigung"
+
+on:
+  push:
+    branches: [main]
+    paths: ["daten/updates.js"]
+  workflow_dispatch:
+    inputs:
+      erzwingen:
+        description: "Neueste Version trotzdem ankündigen (zum Testen)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+jobs:
+  ankuendigen:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Neues Update in Discord ankündigen
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_ROLLE: ${{ vars.DISCORD_ROLLE }}
+          UNIVERSE_ID: "10768606540"
+          ERZWINGEN: ${{ github.event_name == 'workflow_dispatch' && inputs.erzwingen }}
+        run: node bot/update-ankuendigung.js

@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roadmap – Mythische Rolle</title>
+<meta name="description" content="Wie weit Mythische Rolle ist: Meilensteine, Bereiche und was als Nächstes kommt.">
+<meta property="og:title" content="Roadmap – Mythische Rolle">
+<meta property="og:description" content="Meilensteine, Bereiche und was als Nächstes kommt.">
+<meta name="theme-color" content="#141029">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+.stand { color: var(--leise); margin-top: 6px; }
+.sternbild { margin: 18px 0 8px; }
+.sternbild svg { display: block; width: 100%; height: auto; overflow: visible; }
+.sternbild .verbindung { stroke: var(--stern-aus); stroke-width: 2; stroke-dasharray: 4 6; fill: none; }
+.sternbild .verbindung.an { stroke: var(--gold); stroke-dasharray: none; opacity: .75; }
+.sternbild .stern { fill: transparent; stroke: var(--stern-aus); stroke-width: 2; }
+.sternbild .stern.fertig { fill: var(--gold); stroke: var(--gold); }
+.sternbild .stern.aktiv { fill: var(--nordlicht); stroke: var(--nordlicht); }
+.sternbild .hof { fill: var(--gold-glanz); }
+.sternbild .hof.aktiv { fill: color-mix(in srgb, var(--nordlicht) 22%, transparent); transform-box: fill-box; transform-origin: center; animation: hof 2.8s ease-in-out infinite; }
+@keyframes hof { 0%, 100% { transform: scale(1); opacity: .9; } 50% { transform: scale(1.45); opacity: .35; } }
+.sternbild text { fill: var(--text); font-family: "Nunito Sans", system-ui, sans-serif; font-size: 15px; font-weight: 600; }
+.sternbild text.geplant { fill: var(--leise); font-weight: 400; }
+.legende { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--leise); font-size: .9rem; margin-top: 6px; }
+.legende span { display: inline-flex; align-items: center; gap: 7px; }
+.legende i { width: 11px; height: 11px; border-radius: 50%; display: inline-block; border: 2px solid var(--stern-aus); }
+.legende i.fertig { background: var(--gold); border-color: var(--gold); }
+.legende i.aktiv { background: var(--nordlicht); border-color: var(--nordlicht); }
+.gesamt { margin: 18px 0 36px; }
+.gesamt p { margin: 0 0 8px; }
+.gesamt strong { color: var(--gold); }
+.balken { height: 6px; border-radius: 3px; background: var(--linie); overflow: hidden; }
+.balken > span { display: block; height: 100%; background: linear-gradient(90deg, var(--gold), var(--nordlicht)); width: 0; transition: width .8s ease; }
+.rm-raster { display: grid; grid-template-columns: minmax(0, 1fr); gap: 36px; padding-bottom: 32px; }
+@media (min-width: 900px) { .rm-raster { grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr); gap: 48px; } }
+.bereich { border-top: 1px solid var(--linie); }
+.bereich:last-child { border-bottom: 1px solid var(--linie); }
+.bereich summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 2.2rem minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; padding: 14px 4px; }
+.bereich summary::-webkit-details-marker { display: none; }
+.bereich .symbol { font-size: 1.45rem; text-align: center; }
+.bereich .titel { font-weight: 700; font-size: 1.05rem; }
+.status { font-size: .85rem; font-weight: 700; padding: 2px 10px; border-radius: 999px; white-space: nowrap; }
+.status.fertig { color: var(--gold); background: var(--gold-glanz); }
+.status.inarbeit { color: var(--nordlicht); background: color-mix(in srgb, var(--nordlicht) 14%, transparent); }
+.status.geplant { color: var(--leise); background: color-mix(in srgb, var(--leise) 12%, transparent); }
+.runen { grid-column: 2 / 4; display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.rune { width: 10px; height: 10px; transform: rotate(45deg); border: 1.5px solid var(--stern-aus); border-radius: 2px; }
+.rune.an { background: var(--gold); border-color: var(--gold); }
+.prozent { color: var(--leise); font-size: .88rem; margin-left: 8px; }
+.inhalt { padding: 0 4px 18px calc(2.2rem + 16px); }
+.inhalt p { margin: 0 0 10px; color: var(--leise); max-width: 62ch; }
+.inhalt ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.inhalt li { display: grid; grid-template-columns: 1.3rem minmax(0, 1fr); gap: 6px; }
+.inhalt li::before { content: "○"; color: var(--stern-aus); }
+.inhalt li.erledigt::before { content: "✓"; color: var(--gold); font-weight: 700; }
+.inhalt li.erledigt { color: var(--leise); }
+.spalte section + section { margin-top: 36px; }
+.warteschlange { counter-reset: schritt; list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.warteschlange li { counter-increment: schritt; display: grid; grid-template-columns: 2rem minmax(0, 1fr); gap: 10px; align-items: baseline; padding: 8px 0; border-bottom: 1px dashed var(--linie); }
+.warteschlange li::before { content: counter(schritt); font-family: "Cinzel", Georgia, serif; font-weight: 700; color: var(--gold); font-size: 1.15rem; text-align: center; }
+.warteschlange li:first-child { font-weight: 700; }
+.verlauf { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.verlauf li { display: grid; grid-template-columns: 5.6rem minmax(0, 1fr); gap: 10px; }
+.verlauf time { color: var(--leise); font-size: .9rem; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<div id="kopf"></div>
+<main class="breite">
+  <section class="kopfbereich">
+    <h1>Roadmap</h1>
+    <p>Wie weit das Spiel ist, was gerade entsteht und was als Nächstes kommt.</p>
+    <div class="stand" id="stand"></div>
+  </section>
+  <section class="sternbild" aria-label="Meilensteine">
+    <div id="sternbild"></div>
+    <div class="legende" aria-hidden="true">
+      <span><i class="fertig"></i>Fertig</span>
+      <span><i class="aktiv"></i>In Arbeit</span>
+      <span><i></i>Geplant</span>
+    </div>
+  </section>
+  <section class="gesamt" aria-live="polite">
+    <p id="gesamttext"></p>
+    <div class="balken" role="presentation"><span id="gesamtbalken"></span></div>
+  </section>
+  <div class="rm-raster">
+    <section aria-labelledby="b-titel">
+      <h2 id="b-titel">Bereiche</h2>
+      <div id="bereiche"></div>
+    </section>
+    <div class="spalte">
+      <section aria-labelledby="n-titel">
+        <h2 id="n-titel">Als Nächstes</h2>
+        <ol class="warteschlange" id="naechste"></ol>
+      </section>
+      <section aria-labelledby="z-titel">
+        <h2 id="z-titel">Zuletzt erledigt</h2>
+        <ul class="verlauf" id="zuletzt"></ul>
+      </section>
+    </div>
+  </div>
+</main>
+<div id="fuss"></div>
+
+<script src="daten/spiel.js"></script>
+<script src="daten/roadmap.js"></script>
+<script src="seite.js"></script>
+<script>
+(function () {
+  var MR = window.MR, R = MR.roadmap || {};
+  var meta = R.meta || {}, bereiche = R.bereiche || [];
+  function statusKlasse(s) {
+    s = String(s || "").toLowerCase();
+    if (s.indexOf("fertig") === 0) return "fertig";
+    if (s.indexOf("arbeit") !== -1 || s === "aktiv") return "inarbeit";
+    return "geplant";
+  }
+  function fortschritt(b) {
+    var p = Array.isArray(b.punkte) ? b.punkte : [];
+    if (p.length) { var f = p.filter(function (x) { return x && x.erledigt; }).length; return { fertig: f, gesamt: p.length, prozent: Math.round(f / p.length * 100) }; }
+    var w = Math.max(0, Math.min(100, Number(b.fortschritt) || 0));
+    return { fertig: null, gesamt: null, prozent: w };
+  }
+  document.getElementById("stand").textContent = "Version " + (meta.version || "–") + ", Stand " + (meta.datum || "–");
+
+  var NS = "http://www.w3.org/2000/svg";
+  function svgEl(tag, attrs) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); return e; }
+  function sternbild() {
+    var box = document.getElementById("sternbild");
+    while (box.firstChild) box.removeChild(box.firstChild);
+    var sterne = meta.sternbild || [];
+    if (!sterne.length) return;
+    var schmal = box.clientWidth < 640, n = sterne.length, pos = [], breite, hoehe;
+    if (schmal) { breite = 340; hoehe = n * 64 + 30; for (var i = 0; i < n; i++) pos.push({ x: 48 + Math.sin(i * 1.1) * 22, y: 30 + i * 64 }); }
+    else { breite = 1000; hoehe = 250; for (var j = 0; j < n; j++) pos.push({ x: 60 + j * (880 / Math.max(1, n - 1)), y: 125 + Math.sin(j * 1.05 + 0.4) * 62 }); }
+    var svg = svgEl("svg", { viewBox: "0 0 " + breite + " " + hoehe, role: "img" });
+    svg.setAttribute("aria-label", "Meilensteine: " + sterne.map(function (s) { return s.name + ": " + s.status; }).join(", "));
+    for (var a = 0; a < n - 1; a++) {
+      var an = statusKlasse(sterne[a].status) !== "geplant" && statusKlasse(sterne[a + 1].status) !== "geplant";
+      svg.appendChild(svgEl("line", { x1: pos[a].x, y1: pos[a].y, x2: pos[a + 1].x, y2: pos[a + 1].y, "class": "verbindung" + (an ? " an" : "") }));
+    }
+    sterne.forEach(function (s, k) {
+      var kl = statusKlasse(s.status), p = pos[k];
+      if (kl !== "geplant") svg.appendChild(svgEl("circle", { cx: p.x, cy: p.y, r: kl === "inarbeit" ? 20 : 16, "class": "hof" + (kl === "inarbeit" ? " aktiv" : "") }));
+      svg.appendChild(svgEl("circle", { cx: p.x, cy: p.y, r: 8, "class": "stern " + (kl === "inarbeit" ? "aktiv" : kl) }));
+      var t = schmal ? svgEl("text", { x: p.x + 26, y: p.y + 5, "class": kl === "geplant" ? "geplant" : "" })
+        : svgEl("text", { x: p.x, y: p.y < 125 ? p.y - 26 : p.y + 38, "text-anchor": k === 0 ? "start" : (k === n - 1 ? "end" : "middle"), "class": kl === "geplant" ? "geplant" : "" });
+      t.textContent = s.name;
+      svg.appendChild(t);
+    });
+    box.appendChild(svg);
+  }
+
+  var fertig = 0, gesamt = 0;
+  bereiche.forEach(function (b) { var f = fortschritt(b); if (f.gesamt) { fertig += f.fertig; gesamt += f.gesamt; } });
+  var gt = document.getElementById("gesamttext");
+  gt.appendChild(MR.el("strong", null, fertig + " von " + gesamt));
+  gt.appendChild(document.createTextNode(" Aufgaben erledigt" + (meta.zusammenfassung ? ". " + meta.zusammenfassung : ".")));
+  document.getElementById("gesamtbalken").style.width = (gesamt ? Math.round(fertig / gesamt * 100) : 0) + "%";
+
+  var bbox = document.getElementById("bereiche");
+  bereiche.slice().sort(function (a, b) { return (a.reihenfolge || 0) - (b.reihenfolge || 0); }).forEach(function (b) {
+    var d = MR.el("details", "bereich");
+    var s = MR.el("summary");
+    s.appendChild(MR.el("span", "symbol", b.symbol || "✦"));
+    s.appendChild(MR.el("span", "titel", b.titel));
+    s.appendChild(MR.el("span", "status " + statusKlasse(b.status), b.status));
+    var runen = MR.el("span", "runen"), f = fortschritt(b);
+    if (f.gesamt) {
+      b.punkte.forEach(function (p) { runen.appendChild(MR.el("span", "rune" + (p.erledigt ? " an" : ""))); });
+      runen.appendChild(MR.el("span", "prozent", f.fertig + " von " + f.gesamt));
+    } else {
+      for (var i = 0; i < 10; i++) runen.appendChild(MR.el("span", "rune" + (i < Math.round(f.prozent / 10) ? " an" : "")));
+      runen.appendChild(MR.el("span", "prozent", f.prozent + " %"));
+    }
+    runen.setAttribute("aria-label", "Fortschritt " + f.prozent + " Prozent");
+    s.appendChild(runen);
+    d.appendChild(s);
+    var inhalt = MR.el("div", "inhalt");
+    if (b.beschreibung) inhalt.appendChild(MR.el("p", null, b.beschreibung));
+    if (b.punkte && b.punkte.length) {
+      var ul = MR.el("ul");
+      b.punkte.forEach(function (p) { ul.appendChild(MR.el("li", p.erledigt ? "erledigt" : "", p.text)); });
+      inhalt.appendChild(ul);
+    }
+    d.appendChild(inhalt);
+    bbox.appendChild(d);
+  });
+
+  var nl = document.getElementById("naechste");
+  (meta.naechste || []).forEach(function (t) { nl.appendChild(MR.el("li", null, t)); });
+  var zl = document.getElementById("zuletzt");
+  (meta.zuletzt || []).forEach(function (e) {
+    var li = MR.el("li");
+    li.appendChild(MR.el("time", null, e.datum));
+    li.appendChild(MR.el("span", null, e.text));
+    zl.appendChild(li);
+  });
+
+  sternbild();
+  var timer = null;
+  window.addEventListener("resize", function () { clearTimeout(timer); timer = setTimeout(sternbild, 150); });
+})();
+</script>
+</body>
+</html>
