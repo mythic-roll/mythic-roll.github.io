@@ -1,0 +1,53 @@
+# Sternwacht-Bot: leitet Support-Nachrichten aus dem Spiel alle 10 Minuten in den privaten Discord-Kanal weiter.
+# Das Repository ist öffentlich – das Skript schreibt deshalb nur Zahlen ins Log, nie Inhalte oder Namen.
+name: "Discord: Support-Weiterleitung"
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # alle 10 Minuten (GitHub startet manchmal ein paar Minuten später)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: support-weiterleitung
+  cancel-in-progress: false
+
+jobs:
+  weiterleiten:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Neue Support-Nachrichten nach Discord schicken
+        env:
+          ROBLOX_API_KEY: ${{ secrets.ROBLOX_API_KEY }}
+          DISCORD_SUPPORT_WEBHOOK: ${{ secrets.DISCORD_SUPPORT_WEBHOOK }}
+          UNIVERSE_ID: "10768606540"
+          DATASTORE: "SupportTickets_v1"
+        run: node bot/support-weiterleitung.js
+      # Läuft auch, wenn das Skript mittendrin abbricht – bereits gesendete Nachrichten sollen nicht doppelt kommen.
+      - name: Stand merken
+        if: ${{ !cancelled() }}
+        env:
+          ZWEIG: ${{ github.ref_name }}
+        run: |
+          if [ -z "$(git status --porcelain -- bot/support-stand.json)" ]; then
+            echo "Kein neuer Stand – nichts zu speichern."
+            exit 0
+          fi
+          git config user.name "Sternwacht-Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bot/support-stand.json
+          git commit -m "Support: Stand gespeichert"
+          for versuch in 1 2; do
+            if git pull --rebase origin "$ZWEIG" && git push origin "HEAD:$ZWEIG"; then exit 0; fi
+            git rebase --abort 2>/dev/null || true
+            echo "Hochladen hat nicht geklappt – neuer Versuch."
+            sleep 5
+          done
+          exit 1
