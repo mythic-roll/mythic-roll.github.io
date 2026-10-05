@@ -120,21 +120,25 @@ function praefix(von, bis) {
 
 async function schluesselAuflisten(filterPraefix) {
   const ids = [];
-  let token = "";
+  let token = "", roh = 0;
   for (let seite = 0; seite < MAX_SEITEN; seite++) {
-    const q = new URLSearchParams({ maxPageSize: "256", filter: 'id.startsWith("' + filterPraefix + '")' });
+    const q = new URLSearchParams({ maxPageSize: "256" });
+    if (filterPraefix) q.set("filter", 'id.startsWith("' + filterPraefix + '")');
     if (token) q.set("pageToken", token);
     const d = await roblox(STORE_PFAD + "/entries?" + q.toString(), "Auflisten");
     if (d === null) throw new Abbruch("Der DataStore wurde nicht gefunden (404). Stimmen UNIVERSE_ID und DATASTORE?");
     for (const e of d.dataStoreEntries || []) {
+      roh++;
       let id = typeof e.id === "string" ? e.id : "";
       if (!id && typeof e.path === "string" && e.path.includes("/entries/")) id = e.path.split("/entries/").pop();
+      try { id = decodeURIComponent(id); } catch (err) { /* bleibt wie geliefert */ }
+      id = id.split("/").pop(); // ohne Scope-Anteil
       if (id) ids.push(id);
     }
     token = d.nextPageToken || "";
-    if (!token) return { ids, vollstaendig: true };
+    if (!token) return { ids, roh, vollstaendig: true };
   }
-  return { ids, vollstaendig: false };
+  return { ids, roh, vollstaendig: false };
 }
 
 async function eintragLesen(id) {
@@ -308,7 +312,11 @@ async function main() {
     keys: alt && alt.pruef === pruef ? alt.keys.slice() : []
   };
 
-  const liste = await schluesselAuflisten(praefix(grenze, jetzt + 86400));
+  let liste = await schluesselAuflisten(praefix(grenze, jetzt + 86400));
+  // Findet der Filter nichts, zur Sicherheit ohne Filter auflisten (nur Anzahlen ins Log, nie Schlüssel)
+  if (!liste.ids.length) liste = await schluesselAuflisten("");
+  console.log("Gespeicherte Support-Nachrichten gefunden: " + liste.ids.length + " von " + liste.roh + " Einträgen (davon im Zeitfenster: " +
+    liste.ids.filter(id => { const m = /^T_(\d+)_\d+$/.exec(id); return m && Number(m[1]) > grenze; }).length + ").");
   if (!liste.vollstaendig) console.log("Hinweis: Sehr viele gespeicherte Nachrichten – nicht alle konnten geprüft werden. Bitte alte Nachrichten im Spiel-Postfach erledigen.");
 
   const neu = [];
