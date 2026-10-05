@@ -2,6 +2,18 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "1.6.3",
+    "datum": "05.10.2026",
+    "titel": "Noch flüssiger",
+    "neu": [],
+    "verbessert": [
+      "Mehr Leistung: Animationen, die gerade nicht im Bild sind – Kerzen, Laternen, Plaza-Ringe, Turm, schwebende Kristalle und mehr –, werden nicht mehr berechnet. Sobald du hinschaust, ist alles sofort an seinem Platz.",
+      "Die Spaziergänger der Hauptinsel und die Magie der Sternwacht kosten in der übrigen Welt keine Leistung mehr.",
+      "Flügel anderer Spieler, die am Boden angelegt sind, und die leuchtenden Ränder geschlossener Menüs werden im Hintergrund nicht mehr ständig neu berechnet – besonders spürbar auf vollen Servern und auf dem Handy."
+    ],
+    "behoben": []
+  },
+  {
     "version": "1.6.2",
     "datum": "05.10.2026",
     "titel": "Flüssiger unterwegs",

@@ -2,7 +2,7 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "1.6.2",
+    "version": "1.6.3",
     "datum": "05.10.2026",
     "zusammenfassung": "Version 1.6 „Schatten der Nacht“ ist da: Kampfsystem mit Nachtgegnern, das Flussdorf am Wasserfall, die Ostgasse und Jorunds Fähre zur Wolkeninsel.",
     "sternbild": [
@@ -49,6 +49,10 @@ window.MR.roadmap = {
       "Questreihen der Klassen in der Sternwacht"
     ],
     "zuletzt": [
+      {
+        "datum": "05.10.2026",
+        "text": "Version 1.6.3: mehr Leistung bei gleicher Optik"
+      },
       {
         "datum": "05.10.2026",
         "text": "Version 1.6.2: weniger Ruckler und Überfall-Fix"
