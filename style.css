@@ -104,3 +104,12 @@ p { margin: 0 0 12px; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
 }
+
+/* Klassen-Fähigkeiten (Version 1.6) */
+.faehigkeiten { list-style: none; margin: 14px 0 0; padding: 0; display: grid; gap: 8px; }
+.faehigkeiten li { display: grid; grid-template-columns: auto auto 1fr; gap: 10px; align-items: start; padding: 8px 10px;
+  border-radius: 10px; background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08); }
+.faehigkeiten .taste { min-width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 6px; font-weight: 700; font-size: 0.85rem; color: var(--farbe, #e8c46a); border: 1px solid var(--farbe, #e8c46a); }
+.faehigkeiten .fsymbol { font-size: 1.15rem; line-height: 24px; }
+.faehigkeiten .ftext { font-size: 0.92rem; line-height: 1.45; opacity: 0.92; }

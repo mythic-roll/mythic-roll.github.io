@@ -2,9 +2,9 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "1.5",
-    "datum": "04.10.2026",
-    "zusammenfassung": "Die Sternwacht ist innen komplett eingerichtet, die alten Lande sind fast fertig.",
+    "version": "1.6",
+    "datum": "05.10.2026",
+    "zusammenfassung": "Version 1.6 „Schatten der Nacht“ ist da: Kampfsystem mit Nachtgegnern, das Flussdorf am Wasserfall, die Ostgasse und Jorunds Fähre zur Wolkeninsel.",
     "sternbild": [
       {
         "name": "Hub & Auren",
@@ -24,11 +24,11 @@ window.MR.roadmap = {
       },
       {
         "name": "Alte Lande",
-        "status": "In Arbeit"
+        "status": "Fertig"
       },
       {
         "name": "Kampfsystem",
-        "status": "Geplant"
+        "status": "Fertig"
       },
       {
         "name": "Schattendrache",
@@ -44,13 +44,55 @@ window.MR.roadmap = {
       }
     ],
     "naechste": [
-      "Wohnviertel mit Siedlerin Hanne",
-      "Fährfahrten mit Jorund – echte Bootsfahrt, kostenlos",
-      "Kampfsystem-Grundlagen (Etappe 6)",
-      "Roadmap und Konzeptdokument aktualisieren",
-      "Aufräumen und Version 1.5 veröffentlichen"
+      "Der Schattendrache (Etappe 7)",
+      "Eigener Dungeon-Ort für die Runengruft",
+      "Questreihen der Klassen in der Sternwacht"
     ],
     "zuletzt": [
+      {
+        "datum": "05.10.2026",
+        "text": "Politur: neue Aura-Effekte, lebendige Gegner, die Königliche Wolkenschwalbe und viele Gebäude-Fixes"
+      },
+      {
+        "datum": "05.10.2026",
+        "text": "Version 1.6 „Schatten der Nacht“"
+      },
+      {
+        "datum": "04.10.2026",
+        "text": "Kampfsystem: Fähigkeiten, Ausweichrolle und Nachtgegner"
+      },
+      {
+        "datum": "04.10.2026",
+        "text": "Jorunds Fähre zur Wolkeninsel"
+      },
+      {
+        "datum": "04.10.2026",
+        "text": "Ostgasse: sechs Häuser im Zentrum"
+      },
+      {
+        "datum": "04.10.2026",
+        "text": "Flussdorf: sechs Bewohner mit Namen, Wegen und Dialogen"
+      },
+      {
+        "datum": "04.10.2026",
+        "text": "Gildenhalle: breitere Treppen und freie Wendeltreppe"
+      },
+      {
+        "datum": "04.10.2026",
+        "text": "Flussdorf: fünf begehbare Häuser am Wasserfall"
+      },
+      {
+        "datum": "04.10.2026",
+        "text": "Version 1.5 veröffentlicht"
+      },
+      {
+        "datum": "04.10.2026",
+        "text": "Roadmap im Spiel und Konzept auf den neuen Stand gebracht"
+      },
+      {
+        "datum": "04.10.2026",
+        "text": "Eigene Website mit Discord-Bot für Ankündigungen"
+      },
       {
         "datum": "04.10.2026",
         "text": "Bibliothek der Sternwacht mit dem Weltenbuch"
@@ -58,46 +100,6 @@ window.MR.roadmap = {
       {
         "datum": "04.10.2026",
         "text": "Klassen-Neustart für bisherige Spieler"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Meeresrauschen an der ganzen Küste"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Gegenstände sprechen ohne Aura-Gruß"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Changelog 1.5 „Die alten Lande erwachen“"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Kerker mit versiegeltem Dungeon-Tor"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Studierzimmer und Schatzkammer der Magier"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Windgalerie mit Hängebrücken"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Heilgarten und Alchemielabor"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Waffensaal der Hüter"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Große Halle mit Turmmeister Asterion"
-      },
-      {
-        "datum": "04.10.2026",
-        "text": "Bäuerin Frida auf dem Mühlenhof"
       }
     ]
   },
@@ -144,7 +146,7 @@ window.MR.roadmap = {
         },
         {
           "text": "Kampfsystem-Grundlagen (Etappe 6)",
-          "erledigt": false
+          "erledigt": true
         },
         {
           "text": "Der Schattendrache (Etappe 7)",
@@ -165,7 +167,7 @@ window.MR.roadmap = {
       "reihenfolge": 2,
       "titel": "Die alten Lande",
       "symbol": "🗺️",
-      "status": "In Arbeit",
+      "status": "Fertig",
       "beschreibung": "Die Welt rund um den Hub: Flüsse, Küsten, Orte und Geheimnisse.",
       "punkte": [
         {
@@ -193,50 +195,50 @@ window.MR.roadmap = {
           "erledigt": true
         },
         {
-          "text": "Wohnviertel mit Siedlerin Hanne",
-          "erledigt": false
+          "text": "Fährfahrten mit Jorund zur Wolkeninsel",
+          "erledigt": true
         },
         {
-          "text": "Fährfahrten mit Jorund",
-          "erledigt": false
+          "text": "Flussdorf: Landschaft, Wasserrad und fünf Häuser",
+          "erledigt": true
+        },
+        {
+          "text": "Flussdorf: Bewohner, Wege und Dorfplatz",
+          "erledigt": true
         }
       ]
     },
     {
       "id": "release",
       "reihenfolge": 3,
-      "titel": "Version 1.5",
+      "titel": "Version 1.6",
       "symbol": "📜",
-      "status": "In Arbeit",
-      "beschreibung": "Was vor der Veröffentlichung von Version 1.5 noch passieren muss.",
+      "status": "Fertig",
+      "beschreibung": "Version 1.6 „Schatten der Nacht“ ist veröffentlicht.",
       "punkte": [
         {
-          "text": "Changelog-Eintrag für die Spieler",
+          "text": "Changelog „Schatten der Nacht“ für die Spieler",
           "erledigt": true
         },
         {
-          "text": "Klassen-Neustart für bisherige Spieler",
+          "text": "Kampfsystem mit allen vier Klassen im Spiel getestet",
           "erledigt": true
         },
         {
-          "text": "Sieben Geheimnistruhen repariert",
+          "text": "Fähre in beide Richtungen getestet",
           "erledigt": true
         },
         {
-          "text": "Ganzer Turm im Spiel durchgeprüft",
+          "text": "Roadmap und Konzeptdokument aktualisiert",
           "erledigt": true
         },
         {
-          "text": "Roadmap und Konzeptdokument aktualisieren",
-          "erledigt": false
+          "text": "Website und Discord-Bot aktualisiert",
+          "erledigt": true
         },
         {
-          "text": "Aufräumen: Hilfsordner und Testhilfen entfernen",
-          "erledigt": false
-        },
-        {
-          "text": "Veröffentlichen",
-          "erledigt": false
+          "text": "Veröffentlicht am 5. Oktober 2026",
+          "erledigt": true
         }
       ]
     },
@@ -258,7 +260,7 @@ window.MR.roadmap = {
         },
         {
           "text": "Kampfsystem-Grundlagen",
-          "erledigt": false
+          "erledigt": true
         },
         {
           "text": "Runenwächter mit drei Phasen",
@@ -275,8 +277,8 @@ window.MR.roadmap = {
       "reihenfolge": 5,
       "titel": "Eigene Häuser für alle Bewohner",
       "symbol": "🏡",
-      "status": "In Arbeit",
-      "fortschritt": 15,
+      "status": "Fertig",
+      "fortschritt": 100,
       "beschreibung": "Jede Figur im Hub bekommt ein eigenes Zuhause."
     },
     {
@@ -305,6 +307,28 @@ window.MR.roadmap = {
       "status": "Geplant",
       "fortschritt": 0,
       "beschreibung": "Zu jeder Aura ein eigener Wächter."
+    },
+    {
+      "id": "community",
+      "reihenfolge": 9,
+      "titel": "Website und Community",
+      "symbol": "🌐",
+      "status": "Fertig",
+      "beschreibung": "Eine eigene Website und ein Bot, der in Discord über Neues berichtet.",
+      "punkte": [
+        {
+          "text": "Eigene Website mit Auren, Welt, Klassen, Updates und Roadmap",
+          "erledigt": true
+        },
+        {
+          "text": "Discord-Bot kündigt neue Versionen an",
+          "erledigt": true
+        },
+        {
+          "text": "Wochenbericht mit den Zahlen des Spiels in Discord",
+          "erledigt": true
+        }
+      ]
     }
   ]
 };

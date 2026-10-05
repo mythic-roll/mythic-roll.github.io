@@ -47,6 +47,12 @@ window.MR.welt = [
         "name": "Die drei Portale",
         "symbol": "🌀",
         "text": "Tore zu Eis & Kristall, zum Vulkan und zum Wolkentempel."
+      },
+      {
+        "id": "ostgasse",
+        "name": "Die Ostgasse",
+        "symbol": "🏘️",
+        "text": "Sechs neue Wohnhäuser säumen die Oststraße – hier wohnen die Spaziergänger der Plaza, gleich neben Bäckerin Greta."
       }
     ]
   },
@@ -96,6 +102,18 @@ window.MR.welt = [
         "name": "Die Wälder",
         "symbol": "🍂",
         "text": "Zauberwald, Herbstwald und dichte Haine voller Tiere."
+      },
+      {
+        "id": "flussdorf",
+        "name": "Flussdorf am Wasserfall",
+        "symbol": "🏡",
+        "text": "Ein Dorf am Fuß des großen Wasserfalls: Dorfteich, Wasserrad, Holzbrücke und fünf begehbare Häuser. Hier leben Vorsteherin Hanne, Bäckerin Lotte, Barde Emil, die Nordjäger Bjarne und Torvald und die Waldläuferinnen Ilva und Maren."
+      },
+      {
+        "id": "faehre",
+        "name": "Jorunds Fähre",
+        "symbol": "⛵",
+        "text": "Läute am Ende des Hafenstegs die Glocke: Die Wolkenschwalbe segelt übers Meer und steigt auf einem Wolkenstrom zur Wolkeninsel hinauf. Eine Minute, kostenlos."
       }
     ]
   },
@@ -188,7 +206,7 @@ window.MR.welt = [
       224,
       195
     ],
-    "text": "Über der Sternwacht leuchtet ein Nordlicht, im Sumpf und im Nebelwald tanzen Irrlichter, und Sternschnuppen ziehen über den Himmel.",
+    "text": "Über der Sternwacht leuchtet ein Nordlicht, im Sumpf und im Nebelwald tanzen Irrlichter, und Sternschnuppen ziehen über den Himmel. Und mit der Nacht kommen die Schatten: Schattenwesen, Schattenwölfe und Schattenkolosse streifen durch die Wildnis – je weiter vom Zentrum, desto stärker. Deine Aura kämpft von selbst, Dörfer und Rastplätze bleiben sicher.",
     "orte": []
   }
 ];

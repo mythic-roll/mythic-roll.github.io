@@ -2,6 +2,41 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "1.6",
+    "datum": "04.10.2026",
+    "titel": "Schatten der Nacht",
+    "neu": [
+      "Kampfsystem: Lebenspunkte, Ausweichrolle (C) und je drei Klassen-Fähigkeiten auf 1, 2, 3 – für Magier, Hüter, Glückswirker und Himmelsläufer.",
+      "Nachtgegner: Schattenwesen, Schattenwölfe und Schattenkolosse tauchen nachts in der Wildnis auf – je weiter draußen, desto stärker.",
+      "Am Boden statt besiegt: Mitspieler helfen dir mit E wieder auf, sonst erwachst du am nächsten Rastplatz – ohne Verlust.",
+      "Das Flussdorf am Wasserfall: Dorfteich, Wasserrad, Brücke, Aussicht und fünf begehbare Häuser.",
+      "Sechs neue Bewohner: Bäckerin Lotte, Barde Emil, die Nordjäger Bjarne und Torvald und die Waldläuferinnen Ilva und Maren – mit eigenen Wegen und Geschichten.",
+      "Jorunds Fähre: Mit der Königlichen Wolkenschwalbe segelst du vom Hafen zur Wolkeninsel – kostenlos, mit Thron, Wappensegel, goldener Schwalbe am Bug, Gischt, leuchtendem Wolkenstrom und Klängen von der Schiffsglocke bis zur Fanfare.",
+      "Die Ostgasse: sechs neue Wohnhäuser an der Oststraße im Zentrum.",
+      "Acht Auren mit eigenem Effekt: Mondstaub, Kometenschweif, Meteorsturm, Nebula, Schwarzes Loch, Supernova, Pulsar und Urknall.",
+      "Göttliche Würfe bekommen einen eigenen großen Auftritt.",
+      "Gegner werden lebendig: Schattenwölfe traben und heulen, Schattenwesen schweben und flüstern, Schattenkolosse stampfen – mit Treffer- und Todesanimationen und Geräuschen aus ihrer Richtung."
+    ],
+    "verbessert": [
+      "Gildenhalle: breitere, flachere Treppen und freie Kopfhöhe auf der Wendeltreppe im Magierturm.",
+      "Bewohner bleiben im Gespräch stehen und drehen sich an Wegbiegungen sauber um.",
+      "Seltene Auren aufgewertet, mit Klang und Funkenregen beim Anlegen – Auren weit entfernter Spieler werden vereinfacht, damit alles flüssig läuft.",
+      "Hauptmenü: Alle Symbole stehen sauber untereinander, auch auf der Profilkarte.",
+      "Asteroidenkoloss und Sternwächter schauen dich an und bewegen Arme, Kopf und Flossen – Weltraum-Klänge werden mit der Entfernung leiser.",
+      "Neue Stufen am Wolkentempel und am Wolkenanleger, im Verzauberungsturm und in der Bäckerei kommst du bequem nach oben."
+    ],
+    "behoben": [
+      "Spaziergänger liefen an Wendepunkten kurz rückwärts.",
+      "Der Richtungspfeil bei Hilferufen und Überfällen zeigt wieder einen Pfeil statt eines Kästchens – und zuverlässig zum Ziel.",
+      "Fähre: kein Sturz ins Wasser mehr beim Anlegen, keine Fahrt durch den Hafensteg und kein falsches „Du bist gestürzt“.",
+      "Die sechs Häuser der Ostgasse lassen sich betreten, das Basar-Lager ist offen – die Aufträge von Zim und Wilma sind wieder lösbar.",
+      "Magierturm: Eingang frei und Boden unter der Wendeltreppe.",
+      "Sternwacht: 27 umgefallene Laternen stehen wieder, das Brunnendach im Flussdorf ist richtig herum, und viele Türen schlagen nicht mehr in Möbel.",
+      "Nach legendären oder mythischen Würfen bleibt das Sichtfeld der Kamera nicht mehr verstellt.",
+      "Der Schattenwolf steht mit den Pfoten auf dem Boden statt darin."
+    ]
+  },
+  {
     "version": "1.5",
     "datum": "04.10.2026",
     "titel": "Die alten Lande erwachen",

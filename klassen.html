@@ -77,6 +77,20 @@
     d.appendChild(MR.el("div", "lehrer", "Lehrer: " + k.lehrer));
     d.appendChild(MR.el("p", "kurz", k.kurz));
     d.appendChild(MR.el("p", "leise", k.text));
+    if (k.faehigkeiten) {
+      var fl = MR.el("ul", "faehigkeiten");
+      k.faehigkeiten.forEach(function (f) {
+        var li = MR.el("li");
+        li.appendChild(MR.el("span", "taste", f.taste));
+        li.appendChild(MR.el("span", "fsymbol", f.symbol));
+        var tx = MR.el("span", "ftext");
+        tx.appendChild(MR.el("strong", null, f.name));
+        tx.appendChild(document.createTextNode(" – " + f.text));
+        li.appendChild(tx);
+        fl.appendChild(li);
+      });
+      d.appendChild(fl);
+    }
     kbox.appendChild(d);
   });
   document.getElementById("skilltext").textContent = K.skillbaum.text;

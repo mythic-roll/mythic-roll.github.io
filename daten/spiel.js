@@ -1,7 +1,7 @@
 // Mythische Rolle – Grunddaten der Website: Links, Einleitung und Features.
 window.MR = window.MR || {};
 window.MR.spiel = {
-  "version": "1.5",
+  "version": "1.6",
   "links": {
     "spiel": "https://www.roblox.com/games/120147320997614",
     "discord": "https://discord.gg/hhz92HCtCY",
@@ -29,6 +29,11 @@ window.MR.spiel = {
       "symbol": "⭐",
       "titel": "Skillbaum und Klassen",
       "text": "Ein Sternbild aus 35 Skills. Ab Level 10 lernst du im Vorhof der Sternwacht eine von vier Klassen."
+    },
+    {
+      "symbol": "⚔️",
+      "titel": "Kampf in der Nacht",
+      "text": "Nachts streifen Schattenwesen, Schattenwölfe und Schattenkolosse durch die Wildnis – je weiter draußen, desto stärker. Deine Aura kämpft automatisch, dazu kommen drei Klassen-Fähigkeiten und eine Ausweichrolle."
     },
     {
       "symbol": "⚔️",
