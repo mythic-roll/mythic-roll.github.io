@@ -2,6 +2,29 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "1.6.1",
+    "datum": "05.10.2026",
+    "titel": "Feinschliff und Support",
+    "neu": [
+      "Support direkt ans Team: Nachrichten aus dem Hauptmenü landen jetzt beim Team im Discord.",
+      "Einstellungen im Spiel: „Zurück zum Hauptmenü“ und „Support öffnen“ – deine Figur bleibt dabei, wo sie ist.",
+      "Spielstand löschen: In den Einstellungen des Hauptmenüs kannst du deinen Fortschritt nach Bestätigung endgültig löschen. Dein Roblox-Konto bleibt bestehen.",
+      "Mythische und göttliche Würfe funkeln jetzt mit echten Sternen neben dem großen Titel."
+    ],
+    "verbessert": [
+      "Regen und Schnee bleiben draußen: In Gebäuden ist es trocken, unter Vordächern regnet es nur noch halb, und drinnen klingt der Regen gedämpft.",
+      "Handy: Alle Fenster passen auf den Bildschirm – Inventar, Auren, Quests, Shop, Schmiede, Skills, Handel und Hauptmenü. Im Hochformat bricht die Knopfleiste oben rechts in zwei Reihen um.",
+      "Die Tastenbelegung öffnet sich auch aus den Einstellungen im Hauptmenü."
+    ],
+    "behoben": [
+      "Überfälle zeigen wieder den richtigen Ort, z. B. „Überfall auf die Wache am Eisportal“.",
+      "Inventar, Einstellungen und weitere Fenster ragten auf Handys aus dem Bild.",
+      "Der göttliche Titel verdeckt im Hochformat nicht mehr die Ereignis-Leiste.",
+      "Unsichtbare Zeichen beim Support, bei den Codes, im Dungeon-Fenster, bei zwei Skills und am Basar-Schild sind ersetzt.",
+      "Test-Werte aus der Entwicklung landen nicht mehr in der Bestenliste."
+    ]
+  },
+  {
     "version": "1.6",
     "datum": "04.10.2026",
     "titel": "Schatten der Nacht",
