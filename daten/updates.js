@@ -2,6 +2,19 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "1.6.2",
+    "datum": "05.10.2026",
+    "titel": "Flüssiger unterwegs",
+    "neu": [],
+    "verbessert": [
+      "Weniger Ruckler: Das Spiel durchsucht die Welt nicht mehr alle paar Sekunden im Hintergrund (beim Reiten sogar jede halbe Sekunde) – besonders spürbar auf dem Handy.",
+      "Archiv, Schmiede, schwebende Kerzen, Plaza und Wildtiere brauchen weniger Rechenleistung – alles sieht aus wie bisher."
+    ],
+    "behoben": [
+      "Bei Überfällen hingen die Schattenwesen für Spieler in der Nähe schwebend an ihrem Startpunkt fest – jetzt siehst du, wo sie wirklich sind."
+    ]
+  },
+  {
     "version": "1.6.1",
     "datum": "05.10.2026",
     "titel": "Feinschliff und Support",
