@@ -2,9 +2,9 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "1.6.3",
-    "datum": "05.10.2026",
-    "zusammenfassung": "Version 1.6 „Schatten der Nacht“ ist da: Kampfsystem mit Nachtgegnern, das Flussdorf am Wasserfall, die Ostgasse und Jorunds Fähre zur Wolkeninsel.",
+    "version": "1.7",
+    "datum": "06.10.2026",
+    "zusammenfassung": "Version 1.7 „Klinge, Karte und Gruft“ ist da: der leichte Angriff, die Runengruft auf Normal, eine gemalte Weltkarte für alle und die geöffnete Große Halle der Sternwacht.",
     "sternbild": [
       {
         "name": "Hub & Auren",
@@ -45,10 +45,14 @@ window.MR.roadmap = {
     ],
     "naechste": [
       "Der Schattendrache (Etappe 7)",
-      "Eigener Dungeon-Ort für die Runengruft",
+      "Runengruft Heroisch an einem eigenen Dungeon-Ort",
       "Questreihen der Klassen in der Sternwacht"
     ],
     "zuletzt": [
+      {
+        "datum": "06.10.2026",
+        "text": "Version 1.7 „Klinge, Karte und Gruft“: leichter Angriff, Runengruft, Weltkarte und Große Halle"
+      },
       {
         "datum": "05.10.2026",
         "text": "Version 1.6.3: mehr Leistung bei gleicher Optik"
@@ -122,7 +126,7 @@ window.MR.roadmap = {
       "titel": "Die Sternwacht",
       "symbol": "🔭",
       "status": "In Arbeit",
-      "beschreibung": "Der verfallene Turm auf dem Berg, innen magisch größer. Er öffnet sich für alle, die den Schattendrachen besiegen.",
+      "beschreibung": "Der verfallene Turm auf dem Berg, innen magisch größer. Große Halle und Bibliothek stehen allen offen, die oberen Etagen öffnen sich nach dem Sieg über den Schattendrachen.",
       "punkte": [
         {
           "text": "Weg zur Sternwacht mit Sternenstieg und Sternenbrücke",
@@ -154,6 +158,14 @@ window.MR.roadmap = {
         },
         {
           "text": "Observatorium an der Turmspitze",
+          "erledigt": true
+        },
+        {
+          "text": "Große Halle und Bibliothek für alle geöffnet, mit Übungspuppen",
+          "erledigt": true
+        },
+        {
+          "text": "Torflügel, Prozessionsstraße, Nordlicht und Klänge rund um den Turm",
           "erledigt": true
         },
         {
@@ -223,25 +235,25 @@ window.MR.roadmap = {
     {
       "id": "release",
       "reihenfolge": 3,
-      "titel": "Version 1.6",
+      "titel": "Version 1.7",
       "symbol": "📜",
       "status": "Fertig",
-      "beschreibung": "Version 1.6 „Schatten der Nacht“ ist veröffentlicht.",
+      "beschreibung": "Version 1.7 „Klinge, Karte und Gruft“ ist veröffentlicht.",
       "punkte": [
         {
-          "text": "Changelog „Schatten der Nacht“ für die Spieler",
+          "text": "Changelog „Klinge, Karte und Gruft“ für die Spieler",
           "erledigt": true
         },
         {
-          "text": "Kampfsystem mit allen vier Klassen im Spiel getestet",
+          "text": "Nachtkampf, Runengruft und Runenwächter im Spiel getestet",
           "erledigt": true
         },
         {
-          "text": "Fähre in beide Richtungen getestet",
+          "text": "Weltkarte mit Entdecken und Teleport getestet",
           "erledigt": true
         },
         {
-          "text": "Roadmap und Konzeptdokument aktualisiert",
+          "text": "Roadmap im Spiel aktualisiert",
           "erledigt": true
         },
         {
@@ -249,7 +261,7 @@ window.MR.roadmap = {
           "erledigt": true
         },
         {
-          "text": "Veröffentlicht am 5. Oktober 2026",
+          "text": "Veröffentlicht am 6. Oktober 2026",
           "erledigt": true
         }
       ]
@@ -259,7 +271,7 @@ window.MR.roadmap = {
       "reihenfolge": 4,
       "titel": "Dungeons und Kampf",
       "symbol": "⚔️",
-      "status": "Geplant",
+      "status": "In Arbeit",
       "beschreibung": "Die Gruft des Runenwächters und das Kampfsystem dafür.",
       "punkte": [
         {
@@ -267,7 +279,11 @@ window.MR.roadmap = {
           "erledigt": true
         },
         {
-          "text": "Eigener Dungeon-Ort für die Runengruft",
+          "text": "Runengruft auf Normal mit Knochenhalle und Runenkammer",
+          "erledigt": true
+        },
+        {
+          "text": "Eigener Dungeon-Ort für die Runengruft (Heroisch)",
           "erledigt": false
         },
         {
@@ -275,8 +291,12 @@ window.MR.roadmap = {
           "erledigt": true
         },
         {
+          "text": "Gemeinsamer Kampfkern und leichter Angriff",
+          "erledigt": true
+        },
+        {
           "text": "Runenwächter mit drei Phasen",
-          "erledigt": false
+          "erledigt": true
         },
         {
           "text": "Runen-Ausrüstung als Beute",
@@ -299,7 +319,7 @@ window.MR.roadmap = {
       "titel": "Besser spielbar auf dem Handy",
       "symbol": "📱",
       "status": "In Arbeit",
-      "fortschritt": 50,
+      "fortschritt": 60,
       "beschreibung": "Bedienung und Leistung auf Handys und Tablets verbessern."
     },
     {

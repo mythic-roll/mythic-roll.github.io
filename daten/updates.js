@@ -2,6 +2,56 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "1.7",
+    "datum": "06.10.2026",
+    "titel": "Klinge, Karte und Gruft",
+    "neu": [
+      "Leichter Angriff: Linksklick am PC, ⚔-Knopf am Handy oder R2 am Controller – drei Schläge als Kombo, der dritte stößt den Gegner zurück. Gedrückt halten schlägt weiter, deine Aura kämpft wie gewohnt mit.",
+      "Die Runengruft ist zurück – auf Normal: Mit dem Runenschlüssel aus der Elementtruhe öffnest du am Runentor den Dungeon-Finder, allein oder in einer Gruppe mit bis zu fünf Spielern. Wer den Wächter schon besiegt hat, kommt immer hinein.",
+      "Weltkarte für alle (M oder 🗺️): eine gemalte Karte des ganzen Kontinents mit den vier Inseln, dazu ein Stadtplan als Lupe. Jeden Ort, den du einmal besucht hast, erreichst du danach per Teleport.",
+      "Die Sternwacht öffnet sich: Große Halle und Bibliothek stehen allen offen. Die oberen Etagen, der Keller und das Observatorium warten auf den Sieg über den Schattendrachen.",
+      "Vor dem Runenwächter warten Knochenhalle und Runenkammer mit je zwei Wellen aus Gruftwesen und Knochenwölfen – ganz zum Schluss stellt sich dir ein Knochenkoloss.",
+      "Schaurige Gruftkammern: Säulen und Spitzbögen, Gebeinwände, Sarkophage mit steinernen Rittern, Runen-Obelisken, Kohlebecken und ein Runenkreis im Boden, der im Kampf rot und nach dem Sieg golden leuchtet.",
+      "Gruft für jede Gruppe: Die Gegner wachsen mit eurem Level, und mit mehr Spielern kommen mehr und stärkere. Der Runenkreis heilt euch vor der zweiten Welle, nach jeder Kammer und jedes Mal, wenn der Runenwächter aufbrüllt.",
+      "Gruft-Beute: Kammertruhen geben bei jedem Lauf Sternenstaub und einmal am Tag einen Glückswurf, in der Runenkammer mit Glück auch Splitter. In der Schatzkammer warten Glückswürfe, Sternenstaub und mit Glück Splitter oder ein Relikt: Runenamulett, Kampfrune oder Herz des Hüters.",
+      "Gruft-Fortschritt: Jeder Sieg bringt Erfahrung und einen Skillpunkt (bis zu 3 am Tag), der erste Sieg zusätzlich den Titel „Runenlehrling“. Deine Läufe und deine Bestzeit zeigt der Dungeon-Finder.",
+      "Neue Reiseziele: Vorhof der Sternwacht, Flussdorf, Mühlenhof, Hafen und Tempelruine. Mit einer kosmischen Aura reist du ohne Abklingzeit überallhin – auch zu Orten, die du noch nicht entdeckt hast.",
+      "Gefahrenzonen auf der Karte: Sie zeigen, wie stark die Nachtgegner in jeder Gegend mindestens sind und wo dich Städte und Rastplätze schützen.",
+      "Neue Große Halle: Sternengewölbe, Kompass-Mosaik, Klassenbanner und ein schwebender Himmelsglobus – dazu drei Übungspuppen, die deinen Schaden pro Sekunde zeigen.",
+      "Ankunft an der Sternwacht: Am Ende der Sternenbrücke öffnet sich das Tor von selbst. Beim ersten Besuch zerbricht das Runensiegel am Siegeltor mit Licht und Klang. Eine gepflasterte Straße führt zur Runenwand, und nachts wogt ein neues Nordlicht über dem Turm.",
+      "Die Sternwacht klingt lebendig: Wind über der Brücke, knisternde Fackeln, der Brunnen im Vorhof, eine ferne Turmglocke und raschelnde Seiten in der Bibliothek.",
+      "Neuer Spielerrahmen oben links: Deine Lebensleiste sitzt direkt unter deinem Namen und zeigt Schild, frisch verlorenes Leben und wie lange du noch am Boden liegst. Dein Level steht als Abzeichen an deinem Bild. Auf dem Handy gibt es eine schmale Variante.",
+      "Kampf sieht und klingt besser: leuchtende Hiebe in deiner Aurafarbe, Funken, Druckwellen und neue Kampfklänge. Kritische Treffer erscheinen als große goldene Zahlen, und ein goldener Umriss zeigt, wen dein nächster Schlag trifft.",
+      "Controller: R2 schlägt zu, X/Y/B lösen die Klassen-Fähigkeiten aus, R1 rollt zur Seite.",
+      "Am Handy zeigt ein langer Druck auf eine Fähigkeit ihre Beschreibung."
+    ],
+    "verbessert": [
+      "Gleiche Kampfregeln überall: Ausweichen, Schild, Schadensminderung und „Am Boden“ gelten jetzt auch bei Überfällen, im Weltraum und in der Runengruft. Deine Klassen-Fähigkeiten (1, 2, 3) treffen dort ebenfalls, und Mitspieler helfen dir überall wieder auf.",
+      "Ausweichrolle (C) mit zwei Ladungen: Jede ist nach 3 Sekunden wieder bereit.",
+      "Nachtkampf neu abgestimmt: Nachtgegner werden mit deinem Level stärker und bringen dafür mehr Sternenstaub. Schattenwesen und -wölfe fallen in wenigen Sekunden. Höchstens zwei Gegner greifen dich gleichzeitig an, ein Schattenkoloss nie zusammen mit anderen.",
+      "Dein Leben erholt sich nicht mehr mitten im Kampf: Erst wenn du 5 Sekunden lang keinen Schaden nimmst, bekommst du 2 % pro Sekunde zurück.",
+      "Klügere Gegner: Sie laufen nicht mehr durch Häuser und Felsen und kehren um, wenn du sie zu weit weglockst. Fliegst du über ihnen, werfen sie Schattenbolzen – achte auf rotes Leuchten.",
+      "Schutzzonen: In Städten, an Rastplätzen und bei Dorfbewohnern greifen dich Nachtgegner nicht an – von dort aus triffst du sie aber auch nicht.",
+      "Bannkreis, Sternenschlag und Windstoß unterbrechen den Stampfer des Schattenkolosses und das Laden eines Schattenbolzens.",
+      "Hüter: Nach dem Schildwall greifen Gegner und Bosse in der Nähe vier Sekunden lang nur dich an. Sternenschlag trifft härter und ist schneller wieder bereit.",
+      "Schilde und Heilungen wachsen jetzt mit deinem Leben – auf hohem Level wirken sie spürbar stärker.",
+      "Skillbaum überarbeitet: Schildrune, Schutzrune, Dornen-Schild, Heilung über Zeit, Arkanblitz, Manafluss und Heiliger Schild wirken jetzt im Kampf. Jeder bekommt einmal alle Skillpunkte kostenlos zurück.",
+      "Skillbaum auf dem Handy: Vollbild mit einem Reiter je Ast, großen Sternen zum Antippen und großem Lernen-Knopf. Die Klassenkarte zeigt deine drei Fähigkeiten mit Abklingzeit.",
+      "Der Runenwächter ist fairer: Jeder Treffer kostet dich den gleichen Anteil deines Lebens, egal welches Level du hast. Seine Faust trifft schwächer und seltener, und er hat etwas weniger Leben. Wer seinen roten Flächen ausweicht, hat gute Siegchancen.",
+      "Hilfe (H) und Tastenbelegung erklären jetzt Kampf und Weltkarte. Im Tutorial zeigt dir der neue Schritt „Kämpfen“ den leichten Angriff, die Ausweichrolle und die Weltkarte."
+    ],
+    "behoben": [
+      "Arkanblitz machte bis zu vierfachen Schaden, und schon eine Stufe Schildrune halbierte die Abklingzeit des Schildwalls.",
+      "An den Rastplätzen Hafen, Höhle & Berg und Flussdorf steckst du nach dem Aufwachen nicht mehr im Haus, im Fels oder im Blumenbeet. Wer in der Gruft oder in der Höhle zu Boden geht, erwacht am Höhleneingang.",
+      "Wer im Weltraum zu Boden geht, erwacht am Sternendock statt unten auf der Hauptinsel – oder wird von Mitspielern aufgerichtet.",
+      "Mehrere Teleportziele setzten dich im Boden oder auf der Altarstufe ab.",
+      "Die Portale zu Eis & Kristall, Vulkan und Wolkentempel bringen dich wieder auf den Ankunftsplatz der Insel, die Rückkehrportale direkt vor das passende Portal auf der Hauptinsel.",
+      "Wer im Flug oder auf dem Reittier zu Boden geht, landet sauber. Solange du am Boden liegst, kannst du weder Flügel ausbreiten noch ein Reittier rufen.",
+      "Das Rückkehrportal der Schatzkammer bringt dich zum Höhleneingang statt auf den Berggipfel.",
+      "Der Hinweis an gesperrten Fähigkeitsplätzen nennt die richtige Bedingung: ab Level 10 bei den Klassenlehrern im Vorhof der Sternwacht."
+    ]
+  },
+  {
     "version": "1.6.3",
     "datum": "05.10.2026",
     "titel": "Noch flüssiger",

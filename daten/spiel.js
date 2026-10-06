@@ -1,7 +1,7 @@
 // Mythische Rolle – Grunddaten der Website: Links, Einleitung und Features.
 window.MR = window.MR || {};
 window.MR.spiel = {
-  "version": "1.6.3",
+  "version": "1.7",
   "links": {
     "spiel": "https://www.roblox.com/games/120147320997614",
     "discord": "https://discord.gg/hhz92HCtCY",
@@ -33,17 +33,17 @@ window.MR.spiel = {
     {
       "symbol": "⚔️",
       "titel": "Kampf in der Nacht",
-      "text": "Nachts streifen Schattenwesen, Schattenwölfe und Schattenkolosse durch die Wildnis – je weiter draußen, desto stärker. Deine Aura kämpft automatisch, dazu kommen drei Klassen-Fähigkeiten und eine Ausweichrolle."
+      "text": "Nachts streifen Schattenwesen, Schattenwölfe und Schattenkolosse durch die Wildnis – je weiter draußen, desto stärker. Deine Aura kämpft automatisch, dazu kommen der leichte Angriff, drei Klassen-Fähigkeiten und eine Ausweichrolle."
     },
     {
       "symbol": "⚔️",
       "titel": "Bosse und Ereignisse",
-      "text": "Der Runenwächter kämpft in drei Phasen. Schattenwesen überfallen die Wachen, und Bewohner rufen um Hilfe."
+      "text": "In der Runengruft kämpfst du dich durch Knochenhalle und Runenkammer bis zum Runenwächter, der in drei Phasen kämpft. Schattenwesen überfallen die Wachen, und Bewohner rufen um Hilfe."
     },
     {
       "symbol": "🗺️",
       "titel": "Eine riesige Welt",
-      "text": "Der Hub, die alten Lande mit Hafen, Mühlenhof und Ruinen, Inseln aus Eis, Feuer und Wolken und darüber der Weltraum."
+      "text": "Der Hub, die alten Lande mit Hafen, Mühlenhof und Ruinen, Inseln aus Eis, Feuer und Wolken und darüber der Weltraum. Eine gemalte Weltkarte bringt dich zu jedem Ort, den du entdeckt hast."
     },
     {
       "symbol": "🎁",

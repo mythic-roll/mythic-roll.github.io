@@ -144,7 +144,7 @@ window.MR.welt = [
         "id": "turm",
         "name": "Der Turm",
         "symbol": "🔒",
-        "text": "Eine Runenwand versperrt den Eingang. Was dahinter wartet, erfährt nur, wer eines Tages den Schattendrachen besiegt."
+        "text": "Durch die Runenwand gelangst du in die Große Halle mit ihren Übungspuppen und in die Bibliothek mit dem Weltenbuch. Die oberen Etagen öffnen sich erst, wenn der Schattendrache fällt."
       }
     ]
   },
