@@ -2,6 +2,19 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "1.8.1",
+    "datum": "07.10.2026",
+    "titel": "Filmreifer Start",
+    "neu": [
+      "Filmreifer Start: Ein neuer Ladebildschirm im Sternenhimmel mit Kinobalken. Der Titel wird von Licht geschrieben, zwölf Runen leuchten als Ladebalken auf und Sätze erzählen von der Geschichte der Inseln – dazu epische Musik.",
+      "Kinotrailer nach dem Laden: Mit einem Lichtblitz kreist die Kamera um den Würfel-Altar, schwebt zur Spitze der Sternwacht und gleitet dann über den Platz zu deiner Figur ins Hauptmenü. Wer gleich loslegen will, drückt „Überspringen“."
+    ],
+    "verbessert": [
+      "Der Ladebildschirm bleibt nur so lange wie nötig: Er wartet, bis die Welt fertig geladen ist – so läuft der Trailer flüssig."
+    ],
+    "behoben": []
+  },
+  {
     "version": "1.8",
     "datum": "07.10.2026",
     "titel": "Runen und Ruhm",

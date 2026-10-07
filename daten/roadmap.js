@@ -2,7 +2,7 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "1.8",
+    "version": "1.8.1",
     "datum": "07.10.2026",
     "zusammenfassung": "Version 1.8 „Runen und Ruhm“ ist da: Runen-Ausrüstung mit sichtbarer Rüstung im Stil deiner Klasse und dem Runenschmied Meister Brandur, die Runengruft auf Heroisch mit der Halle der Ahnen und eine Bestenliste für die schnellsten Läufe – dazu ein neues 3D-Inventar, eine größere Gruft mit Bosskampf wie im Kino und filmreife Aura-Würfe.",
     "sternbild": [
@@ -49,6 +49,10 @@ window.MR.roadmap = {
       "Turm-Dungeon hinter dem Kerkertor"
     ],
     "zuletzt": [
+      {
+        "datum": "07.10.2026",
+        "text": "Version 1.8.1 „Filmreifer Start“: neuer Ladebildschirm mit Kinotrailer"
+      },
       {
         "datum": "07.10.2026",
         "text": "Version 1.8 „Runen und Ruhm“: Runen-Ausrüstung mit sichtbarer Rüstung, Runengruft Heroisch, Bestenliste, 3D-Inventar und filmreife Aura-Würfe"
