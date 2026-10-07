@@ -2,6 +2,28 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "1.9",
+    "datum": "07.10.2026",
+    "titel": "Schwingen der Schatten",
+    "neu": [
+      "Der Schattendrache erwacht: Hoch über der Sternwacht nistet er im Drachenhorst, einer dunklen Felseninsel in den Wolken. Am neuen Drachentor im Vorhof der Sternwacht trägt dich die Sternenbrücke hinauf – über den Dungeon-Finder allein oder mit bis zu fünf Spielern, ab Level 10 und nach einem Sieg über den Runenwächter. Jede Gruppe kämpft auf ihrem eigenen Horst.",
+      "Ein Kampf in drei Phasen: Blas das Sternenhorn – der Drache stürzt aus den Wolken und landet mit einem Beben. Am Boden schlägt er mit Klauen, Schwanz und Flügeln zu und speit Schattenfeuer – hinter Felsen und Ruinen bist du sicher. In der Luft stürzt er herab, lässt Feuer regnen und wirft Schatteneier ab. Zerschlag sie, bevor Schattenwelpen schlüpfen!",
+      "Sternenharpunen: Lade die Harpunen am Inselrand und hol den fliegenden Drachen vom Himmel. Gefesselt am Boden nimmt er viel mehr Schaden. Allein genügt ein Treffer, in der Gruppe braucht es zwei.",
+      "Der Horst zerbricht: In der letzten Phase bricht der Inselrand Stück für Stück weg – rote Risse warnen dich. Kurz vor dem Ende holt der Drache zum Letzten Atem aus. Dann hilft nur noch eins: hinter die Felsnadeln!",
+      "Heroisch: ab Level 10 mit Klasse und einem Sieg auf Normal. Der Drache ist stärker und schneller, seine Welpen spucken Feuer und der Horst bricht schneller. Dazu kommt der Schattensturm: Ein Wirbel aus Schatten zieht alle zum Rand – lauf dagegen an oder halt dich hinter Felsen fest!",
+      "Der Drachenhort: Nach dem Sieg leuchtet der Hort im Nest. Jeder Kämpfer nimmt sich seinen Anteil: Glückswürfe, Sternenstaub, mit Glück Splitter und bei jedem Sieg ein Teil Runen-Ausrüstung. Auf Heroisch gibt es doppelt so viel und bessere Runen. Beim ersten Sieg wartet der Titel „Drachentöter“, auf Heroisch „Drachenbezwinger“.",
+      "Das Schattendrachen-Reittier: Mit Glück liegt im Hort ein kleiner Schattendrache für dich – spätestens beim 20. Sieg, auf Heroisch beim 15. Er fliegt schneller als der Greif und trägt dich mit Schattenschwaden und leuchtenden Augen durch die Wolken.",
+      "Die Sternwacht öffnet sich: Nach dem Sieg zerfallen die Runenschleier an der Treppe zu Sternenstaub. Auf den Etagen der Hüter, Glückswirker, Himmelsläufer und Magier und im Observatorium warten je eine Truhe des Ordens und ein Buch mit ihrer Geschichte. Und Turmmeister Asterion hat zu jeder Etage etwas zu erzählen."
+    ],
+    "verbessert": [
+      "Der Dungeon-Finder zeigt für jeden Dungeon nur seine eigenen Stufen, Texte und Voraussetzungen.",
+      "Die Bossleiste zeigt mit Marken, wann der nächste Abschnitt eines Kampfes beginnt."
+    ],
+    "behoben": [
+      "Die Greife streifen wieder umher – jetzt auf der Hochebene am Fuß des Sternwacht-Bergs."
+    ]
+  },
+  {
     "version": "1.8.1",
     "datum": "07.10.2026",
     "titel": "Filmreifer Start",

@@ -2,9 +2,9 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "1.8.1",
+    "version": "1.9",
     "datum": "07.10.2026",
-    "zusammenfassung": "Version 1.8 „Runen und Ruhm“ ist da: Runen-Ausrüstung mit sichtbarer Rüstung im Stil deiner Klasse und dem Runenschmied Meister Brandur, die Runengruft auf Heroisch mit der Halle der Ahnen und eine Bestenliste für die schnellsten Läufe – dazu ein neues 3D-Inventar, eine größere Gruft mit Bosskampf wie im Kino und filmreife Aura-Würfe.",
+    "zusammenfassung": "Version 1.9 „Schwingen der Schatten“ ist da: der Schattendrache im Drachenhorst hoch über der Sternwacht – mit Sternenharpunen, Schattenbrut und einem Horst, der zerbricht –, Heroisch mit dem Schattensturm, der Drachenhort mit dem Schattendrachen-Reittier und die oberen Etagen der Sternwacht mit Truhen und Büchern des Ordens.",
     "sternbild": [
       {
         "name": "Hub & Auren",
@@ -32,7 +32,7 @@ window.MR.roadmap = {
       },
       {
         "name": "Schattendrache",
-        "status": "Geplant"
+        "status": "Fertig"
       },
       {
         "name": "Turm-Dungeon",
@@ -44,11 +44,14 @@ window.MR.roadmap = {
       }
     ],
     "naechste": [
-      "Der Schattendrache (Etappe 7)",
       "Questreihen der Klassen in der Sternwacht",
       "Turm-Dungeon hinter dem Kerkertor"
     ],
     "zuletzt": [
+      {
+        "datum": "07.10.2026",
+        "text": "Version 1.9 „Schwingen der Schatten“: der Schattendrache im Drachenhorst, Heroisch mit Schattensturm, Schattendrachen-Reittier und die oberen Etagen der Sternwacht"
+      },
       {
         "datum": "07.10.2026",
         "text": "Version 1.8.1 „Filmreifer Start“: neuer Ladebildschirm mit Kinotrailer"
@@ -134,7 +137,7 @@ window.MR.roadmap = {
       "titel": "Die Sternwacht",
       "symbol": "🔭",
       "status": "In Arbeit",
-      "beschreibung": "Der verfallene Turm auf dem Berg, innen magisch größer. Große Halle und Bibliothek stehen allen offen, die oberen Etagen öffnen sich nach dem Sieg über den Schattendrachen.",
+      "beschreibung": "Der verfallene Turm auf dem Berg, innen magisch größer. Große Halle und Bibliothek stehen allen offen, die oberen Etagen öffnen sich nach dem Sieg über den Schattendrachen – mit Truhen und Büchern des Ordens.",
       "punkte": [
         {
           "text": "Weg zur Sternwacht mit Sternenstieg und Sternenbrücke",
@@ -182,7 +185,11 @@ window.MR.roadmap = {
         },
         {
           "text": "Der Schattendrache (Etappe 7)",
-          "erledigt": false
+          "erledigt": true
+        },
+        {
+          "text": "Obere Etagen mit Truhen und Büchern des Ordens",
+          "erledigt": true
         },
         {
           "text": "Questreihen der Klassen auf ihren Etagen",
@@ -243,25 +250,25 @@ window.MR.roadmap = {
     {
       "id": "release",
       "reihenfolge": 3,
-      "titel": "Version 1.8",
+      "titel": "Version 1.9",
       "symbol": "📜",
       "status": "Fertig",
-      "beschreibung": "Version 1.8 „Runen und Ruhm“ ist veröffentlicht.",
+      "beschreibung": "Version 1.9 „Schwingen der Schatten“ ist veröffentlicht.",
       "punkte": [
         {
-          "text": "Changelog „Runen und Ruhm“ für die Spieler",
+          "text": "Changelog „Schwingen der Schatten“ für die Spieler",
           "erledigt": true
         },
         {
-          "text": "Runen-Ausrüstung, Runenschmied und Runengruft Heroisch im Spiel getestet",
+          "text": "Schattendrache auf Normal und Heroisch im Spiel getestet",
           "erledigt": true
         },
         {
-          "text": "Bestenliste und Wochenbelohnung getestet",
+          "text": "Drachenhort, Titel und Schattendrachen-Reittier getestet",
           "erledigt": true
         },
         {
-          "text": "Neues 3D-Inventar, sichtbare Rüstung je Klasse, größere Gruft mit Kino-Bosskampf und filmreife Aura-Würfe getestet",
+          "text": "Sternwacht-Etagen mit Truhen, Büchern und Turmmeister Asterion getestet",
           "erledigt": true
         },
         {
@@ -284,7 +291,7 @@ window.MR.roadmap = {
       "titel": "Dungeons und Kampf",
       "symbol": "⚔️",
       "status": "In Arbeit",
-      "beschreibung": "Die Gruft des Runenwächters und das Kampfsystem dafür.",
+      "beschreibung": "Die Gruft des Runenwächters, der Drachenhorst und das Kampfsystem dafür.",
       "punkte": [
         {
           "text": "Dungeon-Finder und Dungeon-Daten",
@@ -324,6 +331,14 @@ window.MR.roadmap = {
         },
         {
           "text": "Größere Gruft mit Boss-Intro, Bossmusik und einer Arena, die sich im Kampf verändert",
+          "erledigt": true
+        },
+        {
+          "text": "Drachenhorst mit dem Schattendrachen auf Normal und Heroisch",
+          "erledigt": true
+        },
+        {
+          "text": "Drachenhort und Schattendrachen-Reittier als Beute",
           "erledigt": true
         },
         {
