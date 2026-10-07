@@ -2,6 +2,42 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "1.8",
+    "datum": "07.10.2026",
+    "titel": "Runen und Ruhm",
+    "neu": [
+      "Runen-Ausrüstung: Jeder Sieg über den Runenwächter bringt sicher ein Teil – eine Runenklinge (mehr Schaden bei allem, was du tust), ein Rüstungsteil oder einen Runenstein mit eigener Wirkung. Auf Normal bis Episch, auf Heroisch bis Legendär.",
+      "Rüstung zum Anziehen: Helm, Brustrüstung, Handschuhe und Stiefel trägst du sichtbar am Körper – im Stil deiner Klasse. Hüter glänzen in goldener Plattenrüstung, Magier tragen Sternengewand und Zauberkapuze, Glückswirker grünes Leder mit Kleeblatt-Kappe und Himmelsläufer einen Flügelhelm. Ohne Klasse gibt es Eisen und Leder. Seltene Teile schimmern, leuchten und sprühen Funken.",
+      "Alle vier Rüstungsteile geben Leben, Handschuhe dazu etwas Schaden und Stiefel lassen deine Ausweichrolle schneller nachladen. Vier Teile in derselben Seltenheit geben einen Set-Bonus mit noch mehr Leben. Einfache Rüstungsteile gibt es auch in den Kisten im Shop.",
+      "Vier Runensteine: Lebensrune (deine Treffer heilen dich ein wenig), Funkenrune (Treffer springen als Funke auf einen zweiten Gegner über), Sturmrune (deine Ausweichrolle lädt schneller nach) und Zornrune (mehr kritische Treffer).",
+      "Neues Inventar (K): links deine Figur in 3D mit allen Plätzen – Helm, Brust, Handschuhe, Stiefel, Runenklinge, Runenstein, Titel, Spur, drei Relikte und Würfel –, rechts deine Tasche mit echten 3D-Modellen in der Farbe ihrer Seltenheit. Antippen zeigt ein Stück groß und drehend, mit Wirkung, Vergleich zu deinem angelegten Teil, Set-Stand, Preisen beim Runenschmied und dem Knopf zum Anlegen, Ablegen oder Trinken. Mit „Helm: aus“ sind deine Haare und Hüte wieder zu sehen.",
+      "Meister Brandur, der Runenschmied: An seiner Esse in der Kristallgrotte vor dem Runentor wertet der Zwerg deine Teile mit Splittern bis +5 auf und zerlegt, was du nicht mehr brauchst.",
+      "Die Runenklinge sieht jeder: diagonal auf dem Rücken, im Kampf in deiner Hand – als echtes 3D-Schwert, genau wie im Inventar. Seltene Klingen sind länger, schimmern in deiner Aurafarbe, leuchten und sprühen Funken.",
+      "Runengruft „Heroisch“: ab Level 10 mit Klasse und einem Sieg auf Normal, allein oder mit bis zu fünf Spielern. Dieselben Räume, aber düster – blaues Geisterfeuer, Nebel und leuchtende Risse im Boden. Die Gegner halten deutlich mehr aus.",
+      "Halle der Ahnen: die neue dritte Kammer auf Heroisch. Geisterritter blocken mit ihrem Schild von vorn – greif sie von der Seite an. Fluchpriester verfluchen dich – Heilung von Mitspielern bricht den Fluch. Und der riesige Runengolem wirft Felsbrocken.",
+      "Runenkäfig: Auf Heroisch sperrt der Runenwächter einen Spieler in einen Käfig aus Runen. Schlag dich frei oder lass dir von deiner Gruppe helfen, bevor er an dir zehrt.",
+      "Heroisch-Beute: doppelt so viel Sternenstaub und Glückswürfe, bessere Runen-Teile und beim ersten Sieg der Titel „Runenmeister“.",
+      "Bestenliste: die schnellsten Heroisch-Läufe der Woche und aller Zeiten, allein und in der Gruppe – auf der neuen Steintafel am Runentor und im Dungeon-Finder (🏆). Die Top 10 der Woche bekommen beim nächsten Besuch Glückswürfe und Sternenstaub.",
+      "Jede Gruppe kämpft in ihrer eigenen Gruft: Niemand muss mehr warten, auch wenn mehrere Gruppen gleichzeitig unterwegs sind. Wer hinausgeht, kommt über den Dungeon-Finder zu seiner Gruppe zurück.",
+      "Die Runengruft ist gewachsen: Alle Räume sind fast doppelt so groß, und der Runenwächter wartet in einer riesigen Halle mit Platz für die ganze Gruppe. Er selbst ist auch ein Stück größer geworden.",
+      "Bosskampf wie im Kino: Beim Erwecken zeigt ein kurzer Film den Runenwächter, danach steht sein großer Lebensbalken mit Phasen oben am Bildschirm. Eigene Bossmusik, die Arena bebt, Steine fallen von der Decke, Säulen stürzen, Runenfeuer flammt auf und in der letzten Phase glühen Risse im Boden.",
+      "Filmreife Aura-Würfe: Je seltener die Aura, desto gewaltiger der Himmelsstrahl. Ab Episch öffnet sich zuerst ein Himmelsportal, Lichtbänder winden sich herab und beim Aufschlag gibt es Druckwelle und Funkenregen – ab Legendär glüht der Boden, ab Mythisch strahlt ein Kranz aus Licht.",
+      "Seltene Auren zeigen es auch im Alltag: Ab Episch kreist ein leuchtender Runenkreis um deine Füße, ab Legendär steigen Funken von ihm auf, ab Mythisch läuft eine Lichtwelle über den Boden und ab Göttlich dreht sich ein zweiter Kreis."
+    ],
+    "verbessert": [
+      "„Allein betreten“ geht jetzt auf Normal und auf Heroisch.",
+      "Wer die Gruft nach dem Sieg verlässt, ohne den Schatz zu nehmen, bekommt seinen Anteil trotzdem.",
+      "Runen-Ausrüstung wirkt überall, wo du kämpfst – nachts in der Wildnis, bei Überfällen, im Weltraum und in der Gruft.",
+      "„Spielstand löschen“: Geht „Endgültig löschen“ noch nicht, steht jetzt dabei, was noch fehlt."
+    ],
+    "behoben": [
+      "Die Bäume neben der Schmiede und an anderen Stellen der Hauptinsel schweben nicht mehr in der Luft.",
+      "Flügel und das Polarlicht gehen nicht mehr durch die Brust, auch nicht bei breiten Avataren.",
+      "An der Windmühle beim Mühlenhof dreht sich keine kleine zweite Windmühle mehr – sie hat jetzt richtige Flügel mit Segeltuch.",
+      "„Spielstand löschen“ setzt jetzt wirklich alles zurück – auch die Skillpunkte."
+    ]
+  },
+  {
     "version": "1.7",
     "datum": "06.10.2026",
     "titel": "Klinge, Karte und Gruft",

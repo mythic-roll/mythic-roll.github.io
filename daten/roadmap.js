@@ -2,9 +2,9 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "1.7",
-    "datum": "06.10.2026",
-    "zusammenfassung": "Version 1.7 „Klinge, Karte und Gruft“ ist da: der leichte Angriff, die Runengruft auf Normal, eine gemalte Weltkarte für alle und die geöffnete Große Halle der Sternwacht.",
+    "version": "1.8",
+    "datum": "07.10.2026",
+    "zusammenfassung": "Version 1.8 „Runen und Ruhm“ ist da: Runen-Ausrüstung mit sichtbarer Rüstung im Stil deiner Klasse und dem Runenschmied Meister Brandur, die Runengruft auf Heroisch mit der Halle der Ahnen und eine Bestenliste für die schnellsten Läufe – dazu ein neues 3D-Inventar, eine größere Gruft mit Bosskampf wie im Kino und filmreife Aura-Würfe.",
     "sternbild": [
       {
         "name": "Hub & Auren",
@@ -45,10 +45,14 @@ window.MR.roadmap = {
     ],
     "naechste": [
       "Der Schattendrache (Etappe 7)",
-      "Runengruft Heroisch an einem eigenen Dungeon-Ort",
-      "Questreihen der Klassen in der Sternwacht"
+      "Questreihen der Klassen in der Sternwacht",
+      "Turm-Dungeon hinter dem Kerkertor"
     ],
     "zuletzt": [
+      {
+        "datum": "07.10.2026",
+        "text": "Version 1.8 „Runen und Ruhm“: Runen-Ausrüstung mit sichtbarer Rüstung, Runengruft Heroisch, Bestenliste, 3D-Inventar und filmreife Aura-Würfe"
+      },
       {
         "datum": "06.10.2026",
         "text": "Version 1.7 „Klinge, Karte und Gruft“: leichter Angriff, Runengruft, Weltkarte und Große Halle"
@@ -235,21 +239,25 @@ window.MR.roadmap = {
     {
       "id": "release",
       "reihenfolge": 3,
-      "titel": "Version 1.7",
+      "titel": "Version 1.8",
       "symbol": "📜",
       "status": "Fertig",
-      "beschreibung": "Version 1.7 „Klinge, Karte und Gruft“ ist veröffentlicht.",
+      "beschreibung": "Version 1.8 „Runen und Ruhm“ ist veröffentlicht.",
       "punkte": [
         {
-          "text": "Changelog „Klinge, Karte und Gruft“ für die Spieler",
+          "text": "Changelog „Runen und Ruhm“ für die Spieler",
           "erledigt": true
         },
         {
-          "text": "Nachtkampf, Runengruft und Runenwächter im Spiel getestet",
+          "text": "Runen-Ausrüstung, Runenschmied und Runengruft Heroisch im Spiel getestet",
           "erledigt": true
         },
         {
-          "text": "Weltkarte mit Entdecken und Teleport getestet",
+          "text": "Bestenliste und Wochenbelohnung getestet",
+          "erledigt": true
+        },
+        {
+          "text": "Neues 3D-Inventar, sichtbare Rüstung je Klasse, größere Gruft mit Kino-Bosskampf und filmreife Aura-Würfe getestet",
           "erledigt": true
         },
         {
@@ -261,7 +269,7 @@ window.MR.roadmap = {
           "erledigt": true
         },
         {
-          "text": "Veröffentlicht am 6. Oktober 2026",
+          "text": "Veröffentlicht am 7. Oktober 2026",
           "erledigt": true
         }
       ]
@@ -283,8 +291,12 @@ window.MR.roadmap = {
           "erledigt": true
         },
         {
-          "text": "Eigener Dungeon-Ort für die Runengruft (Heroisch)",
-          "erledigt": false
+          "text": "Eigene Gruft für jede Gruppe",
+          "erledigt": true
+        },
+        {
+          "text": "Runengruft auf Heroisch mit der Halle der Ahnen",
+          "erledigt": true
         },
         {
           "text": "Kampfsystem-Grundlagen",
@@ -295,11 +307,23 @@ window.MR.roadmap = {
           "erledigt": true
         },
         {
-          "text": "Runenwächter mit drei Phasen",
+          "text": "Runenwächter mit drei Phasen und Runenkäfig",
           "erledigt": true
         },
         {
-          "text": "Runen-Ausrüstung als Beute",
+          "text": "Runen-Ausrüstung mit Helm, Brust, Handschuhen und Stiefeln als Beute und Runenschmied",
+          "erledigt": true
+        },
+        {
+          "text": "Bestenliste für die schnellsten Läufe",
+          "erledigt": true
+        },
+        {
+          "text": "Größere Gruft mit Boss-Intro, Bossmusik und einer Arena, die sich im Kampf verändert",
+          "erledigt": true
+        },
+        {
+          "text": "Turm-Dungeon hinter dem Kerkertor",
           "erledigt": false
         }
       ]
