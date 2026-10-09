@@ -2,9 +2,9 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "1.9",
-    "datum": "07.10.2026",
-    "zusammenfassung": "Version 1.9 „Schwingen der Schatten“ ist da: der Schattendrache im Drachenhorst hoch über der Sternwacht – mit Sternenharpunen, Schattenbrut und einem Horst, der zerbricht –, Heroisch mit dem Schattensturm, der Drachenhort mit dem Schattendrachen-Reittier und die oberen Etagen der Sternwacht mit Truhen und Büchern des Ordens.",
+    "version": "2.0",
+    "datum": "09.10.2026",
+    "zusammenfassung": "Version 2.0 „Das Siegel der Sterne“ ist da: die große Geschichte mit Prolog, sieben Kapiteln und 44 Quests, das Erbe der Meister mit Meisterprüfung, vierter Fähigkeit und Erbstück für jede Klasse und der Turm-Dungeon „Der Abstieg“ – fünf Ebenen bis zum Sternenfresser, auf Normal, Heroisch und Mythisch, mit Kristallwolf, Sternenlicht-Flügeln und Bestenliste.",
     "sternbild": [
       {
         "name": "Hub & Auren",
@@ -36,18 +36,23 @@ window.MR.roadmap = {
       },
       {
         "name": "Turm-Dungeon",
-        "status": "Geplant"
+        "status": "Fertig"
+      },
+      {
+        "name": "Das Siegel der Sterne",
+        "status": "Fertig"
       },
       {
         "name": "Mondstation",
         "status": "Geplant"
       }
     ],
-    "naechste": [
-      "Questreihen der Klassen in der Sternwacht",
-      "Turm-Dungeon hinter dem Kerkertor"
-    ],
+    "naechste": [],
     "zuletzt": [
+      {
+        "datum": "09.10.2026",
+        "text": "Version 2.0 „Das Siegel der Sterne“: die Geschichte mit Prolog und sieben Kapiteln, das Erbe der Meister und der Turm-Dungeon „Der Abstieg“ mit dem Sternenfresser"
+      },
       {
         "datum": "07.10.2026",
         "text": "Version 1.9 „Schwingen der Schatten“: der Schattendrache im Drachenhorst, Heroisch mit Schattensturm, Schattendrachen-Reittier und die oberen Etagen der Sternwacht"
@@ -132,11 +137,57 @@ window.MR.roadmap = {
   },
   "bereiche": [
     {
-      "id": "sternwacht",
+      "id": "siegel",
       "reihenfolge": 1,
+      "titel": "Das Siegel der Sterne",
+      "symbol": "📖",
+      "status": "Fertig",
+      "beschreibung": "Die große Geschichte von Version 2.0: Unter der Sternwacht liegt der Sternenfresser in Ketten – und das Siegel wird schwächer.",
+      "punkte": [
+        {
+          "text": "Prolog „Der erste Funke“ statt des alten Tutorials",
+          "erledigt": true
+        },
+        {
+          "text": "Sieben Kapitel mit 44 Quests und Lohn für jede Quest",
+          "erledigt": true
+        },
+        {
+          "text": "Quest-Fenster mit Geschichte, Aufgaben und Erfolgen",
+          "erledigt": true
+        },
+        {
+          "text": "Schattenrisse bei Kampf-Quests",
+          "erledigt": true
+        },
+        {
+          "text": "Filmszenen für die großen Momente",
+          "erledigt": true
+        },
+        {
+          "text": "Eine Welt, die sich mit dir verändert, und neue Sätze der Figuren in jedem Kapitel",
+          "erledigt": true
+        },
+        {
+          "text": "Das Erbe der Meister: vier Reihen mit je sieben Quests",
+          "erledigt": true
+        },
+        {
+          "text": "Meisterprüfung gegen das Schatten-Ebenbild, vierte Fähigkeit und Erbstück",
+          "erledigt": true
+        },
+        {
+          "text": "Das Ende der Geschichte – und ein Licht am Mond",
+          "erledigt": true
+        }
+      ]
+    },
+    {
+      "id": "sternwacht",
+      "reihenfolge": 2,
       "titel": "Die Sternwacht",
       "symbol": "🔭",
-      "status": "In Arbeit",
+      "status": "Fertig",
       "beschreibung": "Der verfallene Turm auf dem Berg, innen magisch größer. Große Halle und Bibliothek stehen allen offen, die oberen Etagen öffnen sich nach dem Sieg über den Schattendrachen – mit Truhen und Büchern des Ordens.",
       "punkte": [
         {
@@ -193,17 +244,17 @@ window.MR.roadmap = {
         },
         {
           "text": "Questreihen der Klassen auf ihren Etagen",
-          "erledigt": false
+          "erledigt": true
         },
         {
           "text": "Turm-Dungeon hinter dem Kerkertor",
-          "erledigt": false
+          "erledigt": true
         }
       ]
     },
     {
       "id": "welt",
-      "reihenfolge": 2,
+      "reihenfolge": 3,
       "titel": "Die alten Lande",
       "symbol": "🗺️",
       "status": "Fertig",
@@ -249,26 +300,30 @@ window.MR.roadmap = {
     },
     {
       "id": "release",
-      "reihenfolge": 3,
-      "titel": "Version 1.9",
+      "reihenfolge": 4,
+      "titel": "Version 2.0",
       "symbol": "📜",
       "status": "Fertig",
-      "beschreibung": "Version 1.9 „Schwingen der Schatten“ ist veröffentlicht.",
+      "beschreibung": "Version 2.0 „Das Siegel der Sterne“ ist veröffentlicht.",
       "punkte": [
         {
-          "text": "Changelog „Schwingen der Schatten“ für die Spieler",
+          "text": "Changelog „Das Siegel der Sterne“ für die Spieler",
           "erledigt": true
         },
         {
-          "text": "Schattendrache auf Normal und Heroisch im Spiel getestet",
+          "text": "Prolog und sieben Kapitel mit 44 Quests im Spiel getestet",
           "erledigt": true
         },
         {
-          "text": "Drachenhort, Titel und Schattendrachen-Reittier getestet",
+          "text": "Die Reihen der vier Gründer mit Meisterprüfung, vierter Fähigkeit und Erbstück getestet",
           "erledigt": true
         },
         {
-          "text": "Sternwacht-Etagen mit Truhen, Büchern und Turmmeister Asterion getestet",
+          "text": "Der Abstieg mit dem Sternenfresser auf Normal, Heroisch und Mythisch getestet",
+          "erledigt": true
+        },
+        {
+          "text": "Sternenschatz, Kristallwolf, Sternenlicht-Flügel und Bestenliste getestet",
           "erledigt": true
         },
         {
@@ -280,18 +335,18 @@ window.MR.roadmap = {
           "erledigt": true
         },
         {
-          "text": "Veröffentlicht am 7. Oktober 2026",
+          "text": "Veröffentlicht am 9. Oktober 2026",
           "erledigt": true
         }
       ]
     },
     {
       "id": "dungeons",
-      "reihenfolge": 4,
+      "reihenfolge": 5,
       "titel": "Dungeons und Kampf",
       "symbol": "⚔️",
-      "status": "In Arbeit",
-      "beschreibung": "Die Gruft des Runenwächters, der Drachenhorst und das Kampfsystem dafür.",
+      "status": "Fertig",
+      "beschreibung": "Die Gruft des Runenwächters, der Drachenhorst, der Abstieg unter der Sternwacht und das Kampfsystem dafür.",
       "punkte": [
         {
           "text": "Dungeon-Finder und Dungeon-Daten",
@@ -342,14 +397,26 @@ window.MR.roadmap = {
           "erledigt": true
         },
         {
-          "text": "Turm-Dungeon hinter dem Kerkertor",
-          "erledigt": false
+          "text": "Turm-Dungeon „Der Abstieg“ hinter dem Kerkertor mit fünf Ebenen",
+          "erledigt": true
+        },
+        {
+          "text": "Der Sternenfresser auf Normal, Heroisch und Mythisch",
+          "erledigt": true
+        },
+        {
+          "text": "Sternenschatz, Kristallwolf und Sternenlicht-Flügel als Beute",
+          "erledigt": true
+        },
+        {
+          "text": "Bestenliste für die schnellsten Abstiege",
+          "erledigt": true
         }
       ]
     },
     {
       "id": "haeuser",
-      "reihenfolge": 5,
+      "reihenfolge": 6,
       "titel": "Eigene Häuser für alle Bewohner",
       "symbol": "🏡",
       "status": "Fertig",
@@ -358,7 +425,7 @@ window.MR.roadmap = {
     },
     {
       "id": "handy",
-      "reihenfolge": 6,
+      "reihenfolge": 7,
       "titel": "Besser spielbar auf dem Handy",
       "symbol": "📱",
       "status": "In Arbeit",
@@ -367,7 +434,7 @@ window.MR.roadmap = {
     },
     {
       "id": "mondstation",
-      "reihenfolge": 7,
+      "reihenfolge": 8,
       "titel": "Mondstation Selene-7",
       "symbol": "🌙",
       "status": "Geplant",
@@ -376,7 +443,7 @@ window.MR.roadmap = {
     },
     {
       "id": "runenwaechter",
-      "reihenfolge": 8,
+      "reihenfolge": 9,
       "titel": "Runenwächter für jede Aura",
       "symbol": "🛡️",
       "status": "Geplant",
@@ -385,7 +452,7 @@ window.MR.roadmap = {
     },
     {
       "id": "community",
-      "reihenfolge": 9,
+      "reihenfolge": 10,
       "titel": "Website und Community",
       "symbol": "🌐",
       "status": "Fertig",

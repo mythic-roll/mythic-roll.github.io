@@ -2,6 +2,40 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "2.0",
+    "datum": "09.10.2026",
+    "titel": "Das Siegel der Sterne",
+    "neu": [
+      "„Das Siegel der Sterne“ – die Geschichte: Vor langer Zeit stürzte ein Stern vom Himmel, der Licht frisst: der Sternenfresser. Die vier Meister des Ordens ketteten ihn unter der Sternwacht an – doch das Siegel wird schwächer. Du bist eine Funkenseele, und vielleicht die Letzte, die es retten kann. Ein Prolog und sieben Kapitel mit 44 Quests erzählen, was unter dem Berg schläft.",
+      "Jeder beginnt beim Prolog „Der erste Funke“ bei Priesterin Selene – er ersetzt das alte Tutorial. Danach führen dich Meister Aldric, Turmmeister Asterion, die Klassenlehrer und Meister Brandur durch die Kapitel „Schatten in der Nacht“, „Die vier Flammen“, „Der Orden“, „Die Runengruft“, „Schwingen der Schatten“, „Das Erbe der Meister“ und „Der Abstieg“.",
+      "Quest-Fenster (Q) mit drei Reitern: „Geschichte“ zeigt die Kapitel wie ein Buch, „Aufgaben“ die Tages- und Wochenaufgaben und „Erfolge“ die bisherigen Quests. Am Rand steht deine aktuelle Aufgabe mit Pfeil und Entfernung, goldene „!“ und „?“ schweben über den Figuren, und auf Wunsch fliegt dir ein Leitstern voraus.",
+      "Schattenrisse: Bei Kampf-Quests öffnet sich ein eigener Riss, aus dem auch am Tag Schatten kriechen – nur für dich und so stark wie dein Level.",
+      "Filmszenen erzählen die großen Momente: vier Flammen, deren Licht zur Sternwacht zieht, ein Riss durch das Herz des Turms, ein Drache über den Wolken – und am Ende ein Abschied.",
+      "Lohn für jede Quest: Erfahrung, Sternenstaub, Glückswürfe und ein Skillpunkt, Kampf-Quests dazu ein Runen-Teil. Jedes Kapitel endet mit einer Truhe, einem Titel, einer neuen Spur oder einem Würfel-Design und dauerhaft mehr Glück – zusammen 52 Skillpunkte und +10 % Glück für immer.",
+      "Die Welt verändert sich mit dir: Schreine sind erloschen, bis du ihre Flamme neu entzündest, dunkle Wolken hängen über der Sternwacht, Risse ziehen durch das Siegel – und die Figuren sagen in jedem Kapitel neue, ernste Sätze.",
+      "Das Erbe der Meister: Auf der Etage deiner Klasse erscheint der Geist deines Gründers – Haldra Steinherz, Meister Fortunel, Aeris Windfeder oder Orvan der Sternkundige. In sieben Quests bestehst du ihre Prüfungen, manche davon in ihren Erinnerungen: Hüter halten stand und beschützen, Glückswirker heilen und retten, Himmelsläufer jagen mit dem Wind, Magier lösen Runen- und Sternenrätsel.",
+      "Meisterprüfung: Zum Schluss kämpfst du gegen dein Schatten-Ebenbild – eine dunkle Kopie deiner Figur, die wie deine Klasse kämpft. Wer siegt, wird Meister: mit Titel, einer offenen Schatzkammer auf der Etage und einem Erbstück, das alle an deiner Figur sehen – Haldras Schild, Fortunels Würfel, Aeris' Federn oder Orvans Sternenbuch.",
+      "Die vierte Fähigkeit (Taste 4, am Handy der vierte Knopf): Haldras Bollwerk, Fortunels Sieben, Aeris' Sturmlauf oder Orvans Sternenfall.",
+      "Der Turm-Dungeon „Der Abstieg“: Hinter dem Kerkertor im Keller der Sternwacht führt der Weg fünf Ebenen hinab – durch den alten Kerker, das Gewölbe, die Kristallhöhlen und die Wurzeln des Bergs bis in den Abgrund. Allein oder mit bis zu fünf Spielern, jede Gruppe in ihrer eigenen Tiefe, ab Kapitel 7.",
+      "In der Tiefe: Kerkergeister, Lichtfresser und Kristallspinnen, der Kerkermeister, der an seinen alten Schwur gekettet ist, und die Kristallmutter in ihrem Netz aus Sternenlicht. Dazu befreist du Corvins Seele und lenkst einen Sternenstrahl durch die Kristallhöhlen.",
+      "Der Sternenfresser: Ganz unten steigt er aus dem Abgrund. Verwundbar ist er nur, solange die Lichtkristalle leuchten – und er frisst ihr Licht. Entzünde sie neu, spann die Ketten des Ordens, um ihn niederzureißen, und halte drei Phasen durch, die letzte in fast völliger Dunkelheit.",
+      "Heroisch und Mythisch: Ein Sieg auf Normal öffnet Heroisch, ein Sieg auf Heroisch öffnet Mythisch. Die Gegner sind viel stärker, und der Sternenfresser lernt neue Angriffe: den Finsterstrahl, die Kettenpeitsche und das doppelte Fressen.",
+      "Der Sternenschatz: Nach dem Sieg steigt eine Truhe aus dem Siegel – mit Glückswürfen, Sternenstaub, mit Glück Splittern und einem Teil Runen-Ausrüstung, auf Mythisch bis zu den neuen Mythischen Runen-Teilen mit eigenem Glanz. Der erste Sieg je Stufe bringt die Titel „Tiefenbezwinger“, „Sternenretter“ und „Sternenwahrer“.",
+      "Der Kristallwolf: das schnellste Reittier am Boden, mit leuchtenden Kristallen auf dem Rücken – mit Glück im Sternenschatz, spätestens beim 20. Sieg, auf Heroisch und Mythisch früher.",
+      "Sternenlicht-Flügel: Wer den Sternenfresser auf Mythisch bezwingt, trägt Flügel aus Sternenlicht – und fliegt damit mit jeder Aura. Im Inventar haben sie einen eigenen Platz.",
+      "Bestenliste „Die schnellsten Abstiege · Mythisch“: für die Woche und für alle Zeiten, allein und in der Gruppe – auf der Steintafel am Kerkertor und im Dungeon-Finder. Die Top 10 der Woche bekommen beim nächsten Besuch Glückswürfe und Sternenstaub.",
+      "Und danach? Wer die Geschichte geschafft hat und die Klasse wechselt, spielt auch die Reihe der neuen Klasse. Was am Ende mit dem Siegel geschieht, verraten wir hier nicht – nur so viel: Behalte den Mond im Auge."
+    ],
+    "verbessert": [
+      "Der Dungeon-Finder zeigt für jede Stufe, ob sie allein spielbar ist und wie man sie freischaltet.",
+      "In den Meldungen der Gruft-Bestenliste steht jetzt „Gruft Heroisch“ dabei, damit man die beiden Bestenlisten unterscheiden kann.",
+      "Das Inventar hat neue Plätze für Erbstücke und Flügel."
+    ],
+    "behoben": [
+      "Der Flug-Hinweis nannte die Taste F – geflogen wird mit deiner Flug-Taste (Standard: G)."
+    ]
+  },
+  {
     "version": "1.9",
     "datum": "07.10.2026",
     "titel": "Schwingen der Schatten",
