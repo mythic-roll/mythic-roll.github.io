@@ -53,6 +53,12 @@ window.MR.welt = [
         "name": "Die Ostgasse",
         "symbol": "🏘️",
         "text": "Sechs neue Wohnhäuser säumen die Oststraße – hier wohnen die Spaziergänger der Plaza, gleich neben Bäckerin Greta."
+      },
+      {
+        "id": "marktstand",
+        "name": "Marktstand",
+        "symbol": "🛡️",
+        "text": "Rüstmeisterin Ingra kauft deine Beute und verkauft Heiltränke, daneben steht deine Lagertruhe."
       }
     ]
   },
@@ -163,25 +169,56 @@ window.MR.welt = [
         "id": "eis",
         "name": "Eis & Kristall",
         "symbol": "❄️",
-        "text": "Gefrorene Kristallfelder. Heimat von Frost, Eisdorn, Aurora und Ewigem Frost."
+        "text": "Gefrorene Kristallfelder. Heimat von Frost, Eisdorn, Aurora und Ewigem Frost. Frostgolems und Frostschamanen greifen auch am Tag an – und Eisherz der Uralte."
       },
       {
         "id": "vulkan",
         "name": "Vulkan",
         "symbol": "🌋",
-        "text": "Lavaströme und glühendes Gestein. Heimat von Glut, Lavaherz und Drachenatem."
+        "text": "Lavaströme und glühendes Gestein. Heimat von Glut, Lavaherz und Drachenatem. Lava-Echsen und Glutteufel lauern am Tag wie in der Nacht – und Aschenmaul."
       },
       {
         "id": "wolkentempel",
         "name": "Wolkentempel",
         "symbol": "☁️",
-        "text": "Ein Marmortempel über den Wolken. Heimat von Wolkenflaum, Sturmläufer und Himmelsflügel."
+        "text": "Ein Marmortempel über den Wolken. Heimat von Wolkenflaum, Sturmläufer und Himmelsflügel. Sturmharpyien und Wolkenwächter bewachen den Tempel – und Sturmkönigin Vela."
       },
       {
         "id": "nebelwald",
         "name": "Nebelwald",
         "symbol": "🌲",
-        "text": "Uralte Bäume im ewigen Nebel. Heimat von Nebelgeist, Schattenkrone und Weltenbaum."
+        "text": "Uralte Bäume im ewigen Nebel. Heimat von Nebelgeist, Schattenkrone und Weltenbaum. Nebelwölfe und Knorrlinge streifen durch den Nebel – und Moosbart der Verfluchte."
+      }
+    ]
+  },
+  {
+    "id": "weltbosse",
+    "name": "Weltbosse",
+    "symbol": "⚔️",
+    "farbe": [
+      255,
+      214,
+      102
+    ],
+    "text": "Jeden Tag um 18 und 21 Uhr erwacht ein Weltboss. Fünf Minuten vorher öffnet sich der goldene Sternenriss im Zentrum und bringt alle ab Level 20 zum Kampfplatz.",
+    "orte": [
+      {
+        "id": "frosttitan",
+        "name": "Frost-Titan",
+        "symbol": "❄️",
+        "text": "Ein Riese aus Eis mit Hörnern und Eisschwert, auf der Eis-Insel."
+      },
+      {
+        "id": "lavakoloss",
+        "name": "Lava-Koloss",
+        "symbol": "🌋",
+        "text": "Ein Feuer-Dämon mit glühenden Rissen, auf der Vulkan-Insel."
+      },
+      {
+        "id": "sturmgreif",
+        "name": "Sturm-Greif",
+        "symbol": "🌩️",
+        "text": "Adlerkopf und Blitz-Flügel, im Nebelwald."
       }
     ]
   },
@@ -206,7 +243,7 @@ window.MR.welt = [
       224,
       195
     ],
-    "text": "Über der Sternwacht leuchtet ein Nordlicht, im Sumpf und im Nebelwald tanzen Irrlichter, und Sternschnuppen ziehen über den Himmel. Und mit der Nacht kommen die Schatten: Schattenwesen, Schattenwölfe und Schattenkolosse streifen durch die Wildnis – je weiter vom Zentrum, desto stärker. Deine Aura kämpft von selbst, Dörfer und Rastplätze bleiben sicher.",
+    "text": "Über der Sternwacht leuchtet ein Nordlicht, im Sumpf und im Nebelwald tanzen Irrlichter, und Sternschnuppen ziehen über den Himmel. Und mit der Nacht kommen die Schatten: Schattenwesen, Schattenwölfe und Schattenkolosse streifen durch die Wildnis – je weiter vom Zentrum, desto stärker. Deine Aura kämpft von selbst, und etwa jeder dritte Gegner lässt Beute fallen. Dörfer und Rastplätze bleiben sicher.",
     "orte": []
   }
 ];

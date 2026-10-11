@@ -1,0 +1,32 @@
+# Sternwacht-Bot: kündigt den Weltboss 5 Minuten vor 18:00 und 21:00 Uhr (deutsche Zeit) im Weltboss-Kanal an.
+# GitHub rechnet in UTC und startet geplante Abläufe manchmal ein paar Minuten später: deshalb startet der Ablauf zu
+# Sommer- und zu Winterzeit jeweils 15 Minuten vor dem Termin; das Skript wartet bis 5 Minuten vorher und sendet nur,
+# wenn wirklich gleich ein Weltboss erwacht (bei den anderen Starts endet es sofort).
+name: "Discord: Weltboss"
+
+on:
+  schedule:
+    - cron: "45 15,16,18,19 * * *"   # 17:45 und 20:45 Uhr deutscher Zeit (Sommerzeit 15:45/18:45 UTC, Winterzeit 16:45/19:45 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: weltboss-ankuendigung
+  cancel-in-progress: false
+
+jobs:
+  ankuendigen:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Weltboss ankündigen
+        env:
+          DISCORD_WELTBOSS_WEBHOOK: ${{ secrets.DISCORD_WELTBOSS_WEBHOOK }}
+          UNIVERSE_ID: "10768606540"
+        run: node bot/weltboss-ankuendigung.js

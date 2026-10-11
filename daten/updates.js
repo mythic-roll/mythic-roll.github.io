@@ -2,6 +2,38 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "3.0",
+    "datum": "11.10.2026",
+    "titel": "Das Zeitalter der Helden",
+    "neu": [
+      "Beute von Gegnern: Etwa jeder dritte Gegner lässt ein Teil fallen – in einer Lichtsäule in der Farbe seiner Seltenheit. Drüberlaufen genügt, in der Gruppe bekommt jeder seine eigene Beute. Sieben Seltenheiten, von Gewöhnlich bis zum neuen Göttlich in Weiß-Gold – und je seltener, desto größer die Show: Ab Episch erklingt ein Ton, ab Legendär reicht die Säule bis zum Himmel, Mythisch und Göttlich zerplatzen in einer Sternen-Explosion.",
+      "Neue Ausrüstung mit 13 Plätzen: deine Klassenwaffe, acht sichtbare Rüstungsteile (Helm, Schultern, Brust, Handschuhe, Gürtel, Beinschutz, Stiefel, Umhang), eine Halskette, zwei Ringe und ein Talisman. Jedes Teil hat eine Teilestufe nach der Stärke des Gegners, eine Level-Grenze und zufällige Bonus-Werte – je seltener, desto mehr. Legendäre Teile haben einen eigenen Effekt, zum Beispiel Kettenblitz, Phönixfeuer oder Sternenfall.",
+      "Halb Aura, halb Ausrüstung: Gute Ausrüstung macht dich jetzt etwa so stark wie eine seltene Aura. Deine Auren bleiben genau, wie sie sind.",
+      "Deine Waffe zeigt deine Klasse: Magier tragen einen Sternenstab, Hüter Schwert und Schild, Glückswirker ein Glückszepter und Himmelsläufer einen Speer. Der leichte Angriff passt dazu – Sternen-Geschosse, Schwerthiebe, Glücksfunken oder Speerstiche.",
+      "Rüstung, die zu dir passt: Jedes Teil erscheint im Stil deiner Klasse – einfach, edel oder prachtvoll, je nach Seltenheit. Vier Sets mit eigenem Look und Set-Boni: Gruftwächter, Drachenschuppe, Sternwächter und Titanen. Mit der Heldenfigur sitzt alles wie angegossen (abschaltbar), in der Garderobe legst du jedes Aussehen, das du einmal hattest, über ein anderes Teil, und jeden Platz kannst du einzeln ausblenden. Dein Umhang weht beim Laufen und Fliegen.",
+      "Meister Brandur und Rüstmeisterin Ingra: Beim Schmied wertest du Teile bis +10 auf, setzt Runensteine in Sockel, würfelst Bonus-Werte neu, erhöhst die Seltenheit und stellst aus Material und Splittern neue Teile her. Am neuen Marktstand auf dem großen Platz kauft Ingra deine Beute, verkauft Heiltränke und erweitert deine Tasche bis 200 Plätze; daneben steht deine Lagertruhe mit 100 Plätzen.",
+      "Charakterfenster (J) mit deiner Figur und allen Werten, ein Ausrüstungswert zum Vergleichen und „Andere ansehen“: Tipp einen Spieler an und sieh dir seine Teile an. Ausrüstung bis Episch kannst du tauschen.",
+      "Heiltränke mit eigenem Knopf (Taste 8): Sie heilen ein gutes Stück Leben – du findest sie bei Gegnern und kaufst sie bei Ingra.",
+      "Neue Gegner in den Gebieten: Auf der Eis-Insel, der Vulkan-Insel, im Nebelwald und am Wolkentempel kämpfst du auch am Tag – gegen Frostgolems, Frostschamanen, Lava-Echsen, Glutteufel, Nebelwölfe, Knorrlinge, Sturmharpyien und Wolkenwächter. Gegner zeigen Name, Level und eine Gefahrenfarbe. Elite-Gegner mit goldenem Glanz sind größer und gefährlicher, und an festen Orten warten seltene Gegner mit Namen – mit besonders guter Beute.",
+      "48 Fähigkeiten: Jede Klasse hat jetzt zwölf Fähigkeiten in drei Wegen – Hüter: Bollwerk, Sternenlicht, Vergeltung · Magier: Sternenfeuer, Arkan, Frost · Glückswirker: Fortuna, Schicksal, Chaos · Himmelsläufer: Sturm, Klinge, Falke. Die neuen lernst du bei deinem Klassenlehrer im Vorhof der Sternwacht. Sechs davon legst du auf deine Leiste (Tasten 1–6), dazu die Meister-Fähigkeit auf 7 – zusammenstellen kannst du sie im Zauberbuch (L).",
+      "Dein Weg: Ab Level 20 lädt dich dein Lehrer zur Weg-Prüfung ein. Danach wählst du einen Weg – seine vier Fähigkeiten werden stärker, und er bestimmt deine Rolle im Dungeon-Finder (Schutz, Heilung oder Schaden). Jede Klasse kämpft mit ihrer eigenen Energie: Glaube, Mana, Glückspunkte oder Wind.",
+      "Das große Sternbild (P): Würfeln, Kampf und Fliegen kosten wie bisher Skillpunkte, die drei Wege deiner Klasse eigene Talentpunkte – einen je Level ab Level 10. Fähigkeiten steigen bis Stufe 5, auf Stufe 5 wählst du eine von zwei Varianten, und jeder Weg hat einen großen Schlüssel-Stern. Zwei Zusammenstellungen kannst du speichern, umskillen geht günstig in der Stadt.",
+      "Effekte wie nie zuvor: echtes Feuer, Eis, Blitze und Rauch für alle 48 Fähigkeiten, Zustände wie Brennen, Frieren, Gift und Betäubung, Kombos zwischen den Elementen – gefrorene Gegner zerspringen bei einem schweren Treffer –, farbige Schadenszahlen und kräftige Treffer. Jeder Gegner stirbt auf seine Art, und legendäre Waffen verändern das Aussehen deiner Fähigkeiten. In den Einstellungen bestimmst du, wie viele Effekte dein Gerät zeigt.",
+      "Weltbosse: Jeden Tag um 18 und um 21 Uhr erwacht ein Weltboss – abwechselnd der Frost-Titan auf der Eis-Insel, der Lava-Koloss auf der Vulkan-Insel und der Sturm-Greif im Nebelwald. Fünf Minuten vorher öffnet sich der goldene Sternenriss im Zentrum und bringt dich ab Level 20 hin. Drei Phasen, rote Warnkreise, Diener und eine Wutphase – und wer mitkämpft oder heilt, bekommt eigene Beute: sicher Episch oder besser, mit etwas Glück Göttlich aus dem Titanen-Set. Dazu Erfolge mit Titeln und eine Rangliste der stärksten Helden. Auf unserem Discord sagt dir der Sternwacht-Bot jeden Tag Bescheid.",
+      "Erfolge und Gegner-Buch: 21 neue Erfolge mit Titeln für Beute und Weltbosse und ein neuer Reiter im Quest-Fenster mit allen Gegnern – wie oft du sie besiegt hast und welche Beute sie bringen.",
+      "Deine Runen-Ausrüstung kommt mit: Alle alten Teile werden zu neuen Teilen auf deinem Level, mit mindestens denselben Werten. Dein angelegter Runenstein sitzt jetzt in einem Sockel.",
+      "Willkommensgeschenk: Beim ersten Start mit 3.0 liegen 5 Heiltränke, 50 Splitter und eine epische Waffe für deine Klasse auf deinem Level in deiner Tasche."
+    ],
+    "verbessert": [
+      "Gegner wachsen mit dir – jetzt bis Level 100. Weil du mit Fähigkeiten und Ausrüstung viel stärker bist als bisher, halten sie etwas mehr aus. Auch Runenwächter, Schattendrache, Sternenfresser und der Koloss im All passen sich an.",
+      "Ziel festhalten: Klick oder tipp auf einen Gegner – deine Fähigkeiten zielen dann auf ihn, und oben siehst du sein Leben.",
+      "Am Handy liegen die Fähigkeiten in einem Bogen um den Angriffsknopf, am Controller erreichst du sie über L2.",
+      "Der Dungeon-Finder zeigt für jede Stufe einen empfohlenen Ausrüstungswert.",
+      "Das Einstellungsfenster lässt sich rollen, wenn es höher ist als dein Bildschirm."
+    ],
+    "behoben": []
+  },
+  {
     "version": "2.0",
     "datum": "09.10.2026",
     "titel": "Das Siegel der Sterne",

@@ -1,7 +1,7 @@
 // Mythische Rolle – Grunddaten der Website: Links, Einleitung und Features.
 window.MR = window.MR || {};
 window.MR.spiel = {
-  "version": "2.0",
+  "version": "3.0",
   "links": {
     "spiel": "https://www.roblox.com/games/120147320997614",
     "discord": "https://discord.gg/hhz92HCtCY",
@@ -28,17 +28,22 @@ window.MR.spiel = {
     {
       "symbol": "⭐",
       "titel": "Skillbaum und Klassen",
-      "text": "Ein Sternbild aus 35 Skills. Ab Level 10 lernst du im Vorhof der Sternwacht eine von vier Klassen."
+      "text": "Ein großes Sternbild für Würfeln, Kampf und Fliegen. Ab Level 10 lernst du im Vorhof der Sternwacht eine von vier Klassen – mit drei Wegen und zwölf Fähigkeiten."
     },
     {
       "symbol": "⚔️",
-      "titel": "Kampf in der Nacht",
-      "text": "Nachts streifen Schattenwesen, Schattenwölfe und Schattenkolosse durch die Wildnis – je weiter draußen, desto stärker. Deine Aura kämpft automatisch, dazu kommen der leichte Angriff, drei Klassen-Fähigkeiten und eine Ausweichrolle."
+      "titel": "Kampf und Beute",
+      "text": "Nachts streifen Schatten durch die Wildnis, in den Gebieten kämpfst du auch am Tag – gegen Elite-Gegner und seltene Gegner mit Namen. Deine Aura kämpft von selbst, dazu der leichte Angriff deiner Klassenwaffe, sechs Fähigkeiten, Heiltränke und eine Ausweichrolle. Etwa jeder dritte Gegner lässt Ausrüstung fallen."
+    },
+    {
+      "symbol": "🛡️",
+      "titel": "Ausrüstung",
+      "text": "13 Plätze von der Klassenwaffe bis zum Talisman, sieben Seltenheiten bis Göttlich, legendäre Effekte und vier Sets – sichtbar an deiner Figur im Stil deiner Klasse. Aufwerten beim Schmied, tauschen bis Episch."
     },
     {
       "symbol": "⚔️",
       "titel": "Bosse und Ereignisse",
-      "text": "In der Runengruft kämpfst du dich durch Knochenhalle und Runenkammer bis zum Runenwächter, der in drei Phasen kämpft. Schattenwesen überfallen die Wachen, und Bewohner rufen um Hilfe."
+      "text": "Runengruft, Drachenhorst und der Abstieg bis zum Sternenfresser – und jeden Tag um 18 und 21 Uhr ein Weltboss: Frost-Titan, Lava-Koloss oder Sturm-Greif. Schattenwesen überfallen die Wachen, und Bewohner rufen um Hilfe."
     },
     {
       "symbol": "🗺️",

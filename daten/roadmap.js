@@ -2,9 +2,9 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "2.0",
-    "datum": "09.10.2026",
-    "zusammenfassung": "Version 2.0 „Das Siegel der Sterne“ ist da: die große Geschichte mit Prolog, sieben Kapiteln und 44 Quests, das Erbe der Meister mit Meisterprüfung, vierter Fähigkeit und Erbstück für jede Klasse und der Turm-Dungeon „Der Abstieg“ – fünf Ebenen bis zum Sternenfresser, auf Normal, Heroisch und Mythisch, mit Kristallwolf, Sternenlicht-Flügeln und Bestenliste.",
+    "version": "3.0",
+    "datum": "11.10.2026",
+    "zusammenfassung": "Version 3.0 „Das Zeitalter der Helden“ ist da: Beute von Gegnern, Ausrüstung mit 13 Plätzen und vier Sets, 48 Fähigkeiten in drei Wegen je Klasse, realistische Effekte und jeden Tag um 18 und 21 Uhr ein Weltboss.",
     "sternbild": [
       {
         "name": "Hub & Auren",
@@ -43,12 +43,24 @@ window.MR.roadmap = {
         "status": "Fertig"
       },
       {
+        "name": "Zeitalter der Helden",
+        "status": "Fertig"
+      },
+      {
         "name": "Mondstation",
+        "status": "Geplant"
+      },
+      {
+        "name": "Auktionshaus",
         "status": "Geplant"
       }
     ],
     "naechste": [],
     "zuletzt": [
+      {
+        "datum": "11.10.2026",
+        "text": "Version 3.0 „Das Zeitalter der Helden“: Beute, Ausrüstung, 48 Fähigkeiten, Effekte und Weltbosse"
+      },
       {
         "datum": "09.10.2026",
         "text": "Version 2.0 „Das Siegel der Sterne“: die Geschichte mit Prolog und sieben Kapiteln, das Erbe der Meister und der Turm-Dungeon „Der Abstieg“ mit dem Sternenfresser"
@@ -137,8 +149,50 @@ window.MR.roadmap = {
   },
   "bereiche": [
     {
-      "id": "siegel",
+      "id": "helden",
       "reihenfolge": 1,
+      "titel": "Das Zeitalter der Helden",
+      "symbol": "⚔️",
+      "status": "Fertig",
+      "beschreibung": "Das große MMO-Update 3.0: Beute, Ausrüstung, neue Fähigkeiten, Effekte und Weltbosse.",
+      "punkte": [
+        {
+          "text": "Beute von Gegnern mit Lichtsäulen und sieben Seltenheiten bis Göttlich",
+          "erledigt": true
+        },
+        {
+          "text": "Ausrüstung mit 13 Plätzen, Klassenwaffen und vier Sets",
+          "erledigt": true
+        },
+        {
+          "text": "Schmied, Marktstand und Lager",
+          "erledigt": true
+        },
+        {
+          "text": "Neue Gegner in den Gebieten, Elite und seltene Gegner mit Namen",
+          "erledigt": true
+        },
+        {
+          "text": "48 Fähigkeiten und drei Wege je Klasse",
+          "erledigt": true
+        },
+        {
+          "text": "Das große Sternbild mit Talenten und Schlüssel-Sternen",
+          "erledigt": true
+        },
+        {
+          "text": "Effekte, Zustände und Kombos",
+          "erledigt": true
+        },
+        {
+          "text": "Weltbosse jeden Tag um 18 und 21 Uhr",
+          "erledigt": true
+        }
+      ]
+    },
+    {
+      "id": "siegel",
+      "reihenfolge": 2,
       "titel": "Das Siegel der Sterne",
       "symbol": "📖",
       "status": "Fertig",
@@ -184,7 +238,7 @@ window.MR.roadmap = {
     },
     {
       "id": "sternwacht",
-      "reihenfolge": 2,
+      "reihenfolge": 3,
       "titel": "Die Sternwacht",
       "symbol": "🔭",
       "status": "Fertig",
@@ -254,7 +308,7 @@ window.MR.roadmap = {
     },
     {
       "id": "welt",
-      "reihenfolge": 3,
+      "reihenfolge": 4,
       "titel": "Die alten Lande",
       "symbol": "🗺️",
       "status": "Fertig",
@@ -300,30 +354,30 @@ window.MR.roadmap = {
     },
     {
       "id": "release",
-      "reihenfolge": 4,
-      "titel": "Version 2.0",
+      "reihenfolge": 5,
+      "titel": "Version 3.0",
       "symbol": "📜",
       "status": "Fertig",
-      "beschreibung": "Version 2.0 „Das Siegel der Sterne“ ist veröffentlicht.",
+      "beschreibung": "Version 3.0 „Das Zeitalter der Helden“ ist veröffentlicht.",
       "punkte": [
         {
-          "text": "Changelog „Das Siegel der Sterne“ für die Spieler",
+          "text": "Changelog „Das Zeitalter der Helden“ für die Spieler",
           "erledigt": true
         },
         {
-          "text": "Prolog und sieben Kapitel mit 44 Quests im Spiel getestet",
+          "text": "Beute, Ausrüstung und Sets im Spiel getestet",
           "erledigt": true
         },
         {
-          "text": "Die Reihen der vier Gründer mit Meisterprüfung, vierter Fähigkeit und Erbstück getestet",
+          "text": "48 Fähigkeiten, drei Wege und das große Sternbild getestet",
           "erledigt": true
         },
         {
-          "text": "Der Abstieg mit dem Sternenfresser auf Normal, Heroisch und Mythisch getestet",
+          "text": "Effekte und Weltbosse getestet",
           "erledigt": true
         },
         {
-          "text": "Sternenschatz, Kristallwolf, Sternenlicht-Flügel und Bestenliste getestet",
+          "text": "Ausgleich aller Klassen, Gegner und Bosse",
           "erledigt": true
         },
         {
@@ -333,16 +387,12 @@ window.MR.roadmap = {
         {
           "text": "Website und Discord-Bot aktualisiert",
           "erledigt": true
-        },
-        {
-          "text": "Veröffentlicht am 9. Oktober 2026",
-          "erledigt": true
         }
       ]
     },
     {
       "id": "dungeons",
-      "reihenfolge": 5,
+      "reihenfolge": 6,
       "titel": "Dungeons und Kampf",
       "symbol": "⚔️",
       "status": "Fertig",
@@ -416,7 +466,7 @@ window.MR.roadmap = {
     },
     {
       "id": "haeuser",
-      "reihenfolge": 6,
+      "reihenfolge": 7,
       "titel": "Eigene Häuser für alle Bewohner",
       "symbol": "🏡",
       "status": "Fertig",
@@ -425,7 +475,7 @@ window.MR.roadmap = {
     },
     {
       "id": "handy",
-      "reihenfolge": 7,
+      "reihenfolge": 8,
       "titel": "Besser spielbar auf dem Handy",
       "symbol": "📱",
       "status": "In Arbeit",
@@ -434,7 +484,7 @@ window.MR.roadmap = {
     },
     {
       "id": "mondstation",
-      "reihenfolge": 8,
+      "reihenfolge": 9,
       "titel": "Mondstation Selene-7",
       "symbol": "🌙",
       "status": "Geplant",
@@ -442,8 +492,17 @@ window.MR.roadmap = {
       "beschreibung": "Eine begehbare Station auf dem Mond, mit eigenem Innenraum."
     },
     {
+      "id": "auktionshaus",
+      "reihenfolge": 10,
+      "titel": "Auktionshaus",
+      "symbol": "⚖️",
+      "status": "Geplant",
+      "fortschritt": 0,
+      "beschreibung": "Ausrüstung und Schätze mit anderen Spielern handeln – auch wenn sie gerade nicht online sind."
+    },
+    {
       "id": "runenwaechter",
-      "reihenfolge": 9,
+      "reihenfolge": 11,
       "titel": "Runenwächter für jede Aura",
       "symbol": "🛡️",
       "status": "Geplant",
@@ -452,7 +511,7 @@ window.MR.roadmap = {
     },
     {
       "id": "community",
-      "reihenfolge": 10,
+      "reihenfolge": 12,
       "titel": "Website und Community",
       "symbol": "🌐",
       "status": "Fertig",
