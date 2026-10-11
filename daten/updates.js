@@ -2,6 +2,30 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "3.0.1",
+    "datum": "12.10.2026",
+    "titel": "Leben auf dem Hof",
+    "neu": [
+      "Leben auf dem Mühlenhof: Kühe auf der Weide, Schweine im Schlamm, Schafe hinter der Scheune und Hühner auf dem Hof.",
+      "Neuer Tagesauftrag bei Bäuerin Frida: Melk Kuh Berta im Takt – drei volle Eimer bringen jeden Tag 120 Sternenstaub und einen Glückswurf.",
+      "Gundels Hexenhof: ein schiefes Hexenhaus auf Stelzen mit Steg, Kräutergarten, Laternen und Glühwürmchen.",
+      "Gorrims Steinbruch ist jetzt ein großer Tagebau mit Kran, Steinstapeln, Lore und Gerüst."
+    ],
+    "verbessert": [
+      "Frosch Baldur fangen ist jetzt ein Reaktions-Spiel: Drück im richtigen Moment, wenn sich die Ringe treffen.",
+      "Die Silbersichel leuchtet als Mondnacht: große Mondsichel mit blassem Vollmond, kreisende Mondsplitter, Sternenregen und silberne Fußspuren.",
+      "Der Weltenbaum trägt jetzt eine Krone aus echten Blättern, mit Ästen aus Licht, fallenden Blättern und Blumen zu deinen Füßen."
+    ],
+    "behoben": [
+      "Flügel stecken im Stand nicht mehr in Kopf, Körper oder Beinen.",
+      "Am Spawn schweben keine Büsche, Felsen und Bäume mehr in der Luft.",
+      "Der Bach unter der Mühlenbrücke im Flussdorf fließt jetzt eben, ohne Felsgrat in der Mitte.",
+      "Die Ritter-Rüstungen in der Schmiede schauen in den Raum statt zur Wand.",
+      "Schadenszahlen an den Übungspuppen erscheinen über dem Kopf statt darin.",
+      "In Beute-, Ausrüstungs- und Dungeon-Texten steht jetzt ★ statt eines leeren Kästchens."
+    ]
+  },
+  {
     "version": "3.0",
     "datum": "11.10.2026",
     "titel": "Das Zeitalter der Helden",
