@@ -2,9 +2,9 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "3.0",
-    "datum": "11.10.2026",
-    "zusammenfassung": "Version 3.0 „Das Zeitalter der Helden“ ist da: Beute von Gegnern, Ausrüstung mit 13 Plätzen und vier Sets, 48 Fähigkeiten in drei Wegen je Klasse, realistische Effekte und jeden Tag um 18 und 21 Uhr ein Weltboss.",
+    "version": "3.1",
+    "datum": "14.10.2026",
+    "zusammenfassung": "Version 3.1 „Aus Lumpen werden Legenden“ ist da: alle Rüstungen, Waffen und Sets neu geschmiedet, Ausrüstung, die mit dir wächst, und Seltenheit, die man sieht.",
     "sternbild": [
       {
         "name": "Hub & Auren",
@@ -47,6 +47,10 @@ window.MR.roadmap = {
         "status": "Fertig"
       },
       {
+        "name": "Bosse neu",
+        "status": "In Arbeit"
+      },
+      {
         "name": "Mondstation",
         "status": "Geplant"
       },
@@ -57,6 +61,10 @@ window.MR.roadmap = {
     ],
     "naechste": [],
     "zuletzt": [
+      {
+        "datum": "14.10.2026",
+        "text": "Version 3.1 „Aus Lumpen werden Legenden“: alle Rüstungen, Waffen und Sets neu geschmiedet, vier Meister-Rüstungen und zwei neue Auren-Effekte"
+      },
       {
         "datum": "11.10.2026",
         "text": "Version 3.0 „Das Zeitalter der Helden“: Beute, Ausrüstung, 48 Fähigkeiten, Effekte und Weltbosse"
@@ -474,8 +482,17 @@ window.MR.roadmap = {
       "beschreibung": "Jede Figur im Hub bekommt ein eigenes Zuhause."
     },
     {
-      "id": "handy",
+      "id": "bosse",
       "reihenfolge": 8,
+      "titel": "Die Bosse erwachen neu",
+      "symbol": "🐉",
+      "status": "In Arbeit",
+      "fortschritt": 0,
+      "beschreibung": "Alle Bosse werden neu gebaut: viel mehr Details, echte Bewegungen, neue Effekte und Klänge."
+    },
+    {
+      "id": "handy",
+      "reihenfolge": 9,
       "titel": "Besser spielbar auf dem Handy",
       "symbol": "📱",
       "status": "In Arbeit",
@@ -484,7 +501,7 @@ window.MR.roadmap = {
     },
     {
       "id": "mondstation",
-      "reihenfolge": 9,
+      "reihenfolge": 10,
       "titel": "Mondstation Selene-7",
       "symbol": "🌙",
       "status": "Geplant",
@@ -493,7 +510,7 @@ window.MR.roadmap = {
     },
     {
       "id": "auktionshaus",
-      "reihenfolge": 10,
+      "reihenfolge": 11,
       "titel": "Auktionshaus",
       "symbol": "⚖️",
       "status": "Geplant",
@@ -502,7 +519,7 @@ window.MR.roadmap = {
     },
     {
       "id": "runenwaechter",
-      "reihenfolge": 11,
+      "reihenfolge": 12,
       "titel": "Runenwächter für jede Aura",
       "symbol": "🛡️",
       "status": "Geplant",
@@ -511,7 +528,7 @@ window.MR.roadmap = {
     },
     {
       "id": "community",
-      "reihenfolge": 12,
+      "reihenfolge": 13,
       "titel": "Website und Community",
       "symbol": "🌐",
       "status": "Fertig",

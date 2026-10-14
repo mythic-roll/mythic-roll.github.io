@@ -1,7 +1,7 @@
 // Mythische Rolle – Grunddaten der Website: Links, Einleitung und Features.
 window.MR = window.MR || {};
 window.MR.spiel = {
-  "version": "3.0.1",
+  "version": "3.1",
   "links": {
     "spiel": "https://www.roblox.com/games/120147320997614",
     "discord": "https://discord.gg/hhz92HCtCY",

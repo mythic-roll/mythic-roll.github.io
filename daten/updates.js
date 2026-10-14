@@ -2,6 +2,25 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "3.1",
+    "datum": "14.10.2026",
+    "titel": "Aus Lumpen werden Legenden",
+    "neu": [
+      "Ausrüstung, die mit dir wächst: Du beginnst in Stoff und einfachem Leder. Mit stärkeren Teilen wird deine Rüstung besser – erst Wanderer und Abenteurer, dann der Stil deiner Klasse: einfach, edel, prachtvoll und ganz neu Meister.",
+      "Seltenheit sieht man jetzt: Gewöhnliche Teile sind schäbig, mit Kratzern, Rost und Flicken. Je seltener, desto sauberer und reicher verziert – Legendär, Mythisch und Göttlich sind makellos, mit Edelsteinen und leuchtenden Teilen.",
+      "Alle Rüstungen neu geschmiedet: Jedes Teil wurde von Grund auf neu gebaut, mit viel mehr Details, und sitzt wie angegossen.",
+      "Vier Meister-Rüstungen: Sonnenkönig (Hüter), Polarlicht (Magier), Schicksalsrad (Glückswirker) und Donnerschwinge (Himmelsläufer) – mit schwebenden und leuchtenden Teilen.",
+      "Neue Waffen: Jede Klasse hat vier eigene Waffen von einfach bis Meister. Bis dahin kämpfst du mit einer Anfänger-Waffe. Auch Waffen werden mit der Seltenheit prächtiger.",
+      "Die Sets Gruftwächter, Drachenschuppe, Sternwächter und Titanen sind ebenfalls neu geschmiedet.",
+      "Zwei Auren leuchten neu: Der Pulsar ist jetzt ein echter Neutronenstern mit Magnetfeld und kreisenden Lichtstrahlen, und das Schwarze Loch zeigt echt berechnetes, gebogenes Licht mit glühender Gasscheibe, Sog und tiefem Grollen."
+    ],
+    "verbessert": [
+      "Bei jedem Teil steht sein Aussehen, zum Beispiel „Aussehen: Prachtvoll · makellos“.",
+      "Deine Garderobe behält alles, was du schon gesammelt hast."
+    ],
+    "behoben": []
+  },
+  {
     "version": "3.0.1",
     "datum": "12.10.2026",
     "titel": "Leben auf dem Hof",
