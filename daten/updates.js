@@ -2,6 +2,34 @@
 window.MR = window.MR || {};
 window.MR.updates = [
   {
+    "version": "3.2",
+    "datum": "15.10.2026",
+    "titel": "Legenden erwachen",
+    "neu": [
+      "Die Bosse erwachen neu: Runenwächter, Schattendrache, Kerkermeister, Kristallmutter, Sternenfresser und die Weltbosse Frost-Titan, Lava-Koloss und Sturm-Greif sind von Grund auf neu gebaut – mit viel mehr Details, echten Bewegungen, eigenen Effekten und neuen Klängen.",
+      "Gleiche Kämpfe, neue Wucht: Angriffe, Zeiten und Schaden bleiben, wie du sie kennst. Aber jeder Boss holt sichtbar aus, Treffer sprühen Funken, Eis, Glut oder Blitze, und jeder Boss hat einen großen Auftritt und einen eigenen Untergang.",
+      "Auch ihre Helfer sind neu: Schatteneier, Kerkergeister, Kristallspinnen in Seiden-Kokons, Lichtfresser und auf den Inseln Frostgolem, Frostschamane, Glutteufel, Lava-Echse, Nebelwolf und Knorrling.",
+      "Dein Schattendrache ist neu: Das Reittier läuft auf allen vieren, springt im Galopp, duckt sich vor dem Abheben, schlägt kraftvoll mit den Flügeln, gleitet, stürzt herab und landet – mit neuem Sattel und Flügelrauschen.",
+      "Auch in der Geschichte fliegt jetzt der neue Schattendrache über die Wolken.",
+      "Das Rad der Fortuna: Alle 12 Stunden darfst du einmal drehen, bis zu zwei Drehungen bleiben gespart. Zu gewinnen gibt es Sternenstaub, Glückswürfe, Glückstränke, Splitter, Gratis-Kisten, „Nochmal drehen“ und den Jackpot. Das große Rad steht auf dem Platz am Roll-Altar, zwischen den Toren zum Nebelwald und zum Shop. Alle sehen, wenn du drehst. Unterwegs drehst du über den Rad-Knopf am linken Rand.",
+      "Das goldene Rad: Drehst du sieben Tage in Folge, wartet das goldene Rad mit besseren Feldern: bis zu 3.000 Sternenstaub, Sternensegen, Gratis-Drachenkisten und fünfmal so viel Jackpot-Glück.",
+      "Fortunas Jackpot: Drei Sammelstücke gibt es nur am Rad: den Titel „Liebling der Fortuna“, die Spur „Fortunas Goldregen“ und den „Fortunawürfel“. Hast du alle drei, bringt dir der Jackpot eine Sternenkiste.",
+      "Kisten öffnen wie nie zuvor: Deine Kiste erscheint auf einer eigenen Bühne. Ihr Licht steigt Seltenheit um Seltenheit bis zu deinem Fund, dann springt der Deckel auf. Legendär und Mythisch werden zum großen Moment: mit Zeitlupe, Lichtsäule, Konfetti und einem Feuerwerk über deinem Kopf, das alle in der Nähe sehen.",
+      "Die Glücksleiste: Jede Kiste ohne Legendär füllt sie ein Stück. Ist sie voll, ist die nächste Kiste sicher Legendär oder besser.",
+      "Geschenke fürs Dableiben: Spielst du an einem Tag 5, 15, 30 und 60 Minuten, wartet jedes Mal ein Geschenk: Sternenstaub, Glückswürfe, ein Glückstrank und zum Schluss eine Gratis-Runenkiste mit großer Show.",
+      "Gewinner-Tafel: Neben dem Rad stehen die größten Gewinne des Tages."
+    ],
+    "verbessert": [
+      "Alle sechs Kisten sind neu gebaut und stehen als echte 3D-Kisten im Kisten-Fenster.",
+      "Das Laufband ist kürzer und zeigt nur noch Gegenstände der Seltenheit, die du gezogen hast. Mit einem Tipp überspringst du die Show.",
+      "Alles bleibt fair und kostenlos: Die Chancen jeder Kiste und jedes Rad-Felds siehst du im Spiel. Beim Rad ist jedes Feld genau so groß wie seine Chance."
+    ],
+    "behoben": [
+      "Die Ketten im Drachenkampf zeigen wieder zum Drachen statt in den Himmel.",
+      "Das Bild deines Ziels oben im Ziel-Fenster löst keine doppelten Klänge und Effekte mehr aus."
+    ]
+  },
+  {
     "version": "3.1",
     "datum": "14.10.2026",
     "titel": "Aus Lumpen werden Legenden",

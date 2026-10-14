@@ -2,9 +2,9 @@
 window.MR = window.MR || {};
 window.MR.roadmap = {
   "meta": {
-    "version": "3.1",
-    "datum": "14.10.2026",
-    "zusammenfassung": "Version 3.1 „Aus Lumpen werden Legenden“ ist da: alle Rüstungen, Waffen und Sets neu geschmiedet, Ausrüstung, die mit dir wächst, und Seltenheit, die man sieht.",
+    "version": "3.2",
+    "datum": "15.10.2026",
+    "zusammenfassung": "Version 3.2 „Legenden erwachen“ ist da: alle Bosse und ihre Helfer neu gebaut, ein neues Schattendrachen-Reittier und das Rad der Fortuna mit neuer Kisten-Show.",
     "sternbild": [
       {
         "name": "Hub & Auren",
@@ -48,7 +48,7 @@ window.MR.roadmap = {
       },
       {
         "name": "Bosse neu",
-        "status": "In Arbeit"
+        "status": "Fertig"
       },
       {
         "name": "Mondstation",
@@ -61,6 +61,10 @@ window.MR.roadmap = {
     ],
     "naechste": [],
     "zuletzt": [
+      {
+        "datum": "15.10.2026",
+        "text": "Version 3.2 „Legenden erwachen“: alle Bosse neu gebaut, neues Schattendrachen-Reittier, Rad der Fortuna und Kisten-Show"
+      },
       {
         "datum": "14.10.2026",
         "text": "Version 3.1 „Aus Lumpen werden Legenden“: alle Rüstungen, Waffen und Sets neu geschmiedet, vier Meister-Rüstungen und zwei neue Auren-Effekte"
@@ -486,8 +490,8 @@ window.MR.roadmap = {
       "reihenfolge": 8,
       "titel": "Die Bosse erwachen neu",
       "symbol": "🐉",
-      "status": "In Arbeit",
-      "fortschritt": 0,
+      "status": "Fertig",
+      "fortschritt": 100,
       "beschreibung": "Alle Bosse werden neu gebaut: viel mehr Details, echte Bewegungen, neue Effekte und Klänge."
     },
     {
